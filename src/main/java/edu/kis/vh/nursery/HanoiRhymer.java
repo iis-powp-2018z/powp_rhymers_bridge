@@ -15,3 +15,5 @@ public class HanoiRhymer extends DefaultCountingOutRhymer {
 			super.countIn(in);
 	}
 }
+// kombinacja klawiszy alt + -> lub alt + <- powoduje przeskok odpowiednio w
+// prawo lub w lewo po zakładkach programu
