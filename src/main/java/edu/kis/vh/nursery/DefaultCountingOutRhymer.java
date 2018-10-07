@@ -4,7 +4,8 @@ public class DefaultCountingOutRhymer {
 
     public static final int EOF = -1;
     public static final int LAST_INDEX = 11;
-    private int[] numbers = new int[12];
+    public static final int SIZE = 12;
+    private int[] numbers = new int[SIZE];
 
     public int total = EOF;
 
