@@ -75,4 +75,10 @@ public class RhymersJUnitTest {
 		Assert.assertEquals(EMPTY_STACK_VALUE, result);
 	}
 
+	@Test
+    public void testReportRejected() {
+	    HanoiRhymer rhymer = new HanoiRhymer();
+	    final int DEFAULT_REPORT_REJECTED_VALUE = 0;
+	    Assert.assertEquals(DEFAULT_REPORT_REJECTED_VALUE, rhymer.reportRejected());
+    }
 }
