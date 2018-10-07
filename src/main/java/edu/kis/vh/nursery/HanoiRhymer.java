@@ -9,10 +9,10 @@ public class HanoiRhymer extends DefaultCountingOutRhymer {
     }
 
     public void countIn(int in) {
-        if (!callCheck() && in > peekaboo())
+        if (!callCheck() && in > peekABoo())
             totalRejected++;
         else
             super.countIn(in);
     }
 }
-// alt + '<-' / '->' służy do nawigacji między odwołaniamy używanymi w edytorze
+// alt + '<-' / '->' służy do nawigacji po edytowanych miejscach (intelij)
