@@ -1,12 +1,10 @@
 package edu.kis.vh.nursery.list;
 
-public class Node {
-
-	public int value;
-	public Node prev, next;
-
-	public Node(int i) {
-		value = i;
-	}
-	
+class Node {
+    //package-private (default access modifier)
+    int value;
+    Node prev, next;
+    Node(final int i) {
+        value = i;
+    }
 }
