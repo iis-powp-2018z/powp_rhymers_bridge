@@ -24,13 +24,13 @@ public class IntLinkedList {
         return false;
     }
 
-    public int top() {
+    private int top() {
         if (isEmpty())
             return EMPTY_VALUE;
         return last.value;
     }
 
-    public int pop() {
+    private int pop() {
         if (isEmpty())
             return EMPTY_VALUE;
         int ret = last.value;
