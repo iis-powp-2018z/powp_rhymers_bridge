@@ -2,16 +2,16 @@ package edu.kis.vh.nursery;
 
 public class DefaultCountingOutRhymer {
 
-    private static final int EOF = -1;
+    private static final int EMPTY_STACK_ = -1;
     private static final int LAST_INDEX = 11;
-    private static final int SIZE = 12;
-    private int[] numbers = new int[SIZE];
+    private static final int STACK_CAPACITY = 12;
+    private int[] numbers = new int[STACK_CAPACITY];
 
     public int getTotal() {
         return total;
     }
 
-    private int total = EOF;
+    private int total = EMPTY_STACK_;
 
     public void countIn(int in) {
         if (!isFull())
@@ -19,7 +19,7 @@ public class DefaultCountingOutRhymer {
     }
 
     public boolean callCheck() {
-        return total == EOF;
+        return total == EMPTY_STACK_;
     }
 
     public boolean isFull() {
@@ -28,13 +28,13 @@ public class DefaultCountingOutRhymer {
 
     protected int peeKaBoo() {
         if (callCheck())
-            return EOF;
+            return EMPTY_STACK_;
         return numbers[total];
     }
 
     public int countOut() {
         if (callCheck())
-            return EOF;
+            return EMPTY_STACK_;
         return numbers[total--];
     }
 }
