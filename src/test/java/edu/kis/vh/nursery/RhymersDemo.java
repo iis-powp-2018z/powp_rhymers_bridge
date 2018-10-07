@@ -29,5 +29,4 @@ class RhymersDemo {
                 + ((HanoiRhymer) rhymers[3]).reportRejected());
 
     }
-
 }

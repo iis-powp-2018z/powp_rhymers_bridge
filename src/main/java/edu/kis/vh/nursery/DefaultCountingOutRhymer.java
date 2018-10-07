@@ -21,7 +21,7 @@ public class DefaultCountingOutRhymer {
         return total == FULL;
     }
 
-    protected int peekABoo() {
+    int peekABoo() {
         if (callCheck())
             return ERROR;
         return numbers[total];

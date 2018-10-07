@@ -3,8 +3,8 @@ package edu.kis.vh.nursery.list;
 public class IntLinkedList {
     private static final int EMPTY_VALUE = -1;
 
-    Node last;
-    int i;
+    private Node last;
+    private int i;
 
     public void push(int i) {
         if (last == null)
@@ -16,17 +16,17 @@ public class IntLinkedList {
         }
     }
 
-    public boolean isEmpty() {
+    private boolean isEmpty() {
         return last == null;
     }
 
-    public boolean isFull() {
+    private boolean isFull() {
         return false;
     }
 
     public int top() {
         if (isEmpty())
-            return -1;
+            return EMPTY_VALUE;
         return last.value;
     }
 
@@ -37,5 +37,4 @@ public class IntLinkedList {
         last = last.prev;
         return ret;
     }
-
 }
