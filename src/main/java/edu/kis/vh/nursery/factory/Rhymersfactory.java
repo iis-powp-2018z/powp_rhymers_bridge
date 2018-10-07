@@ -4,13 +4,13 @@ import edu.kis.vh.nursery.DefaultCountingOutRhymer;
 
 public interface Rhymersfactory {
 
-    public DefaultCountingOutRhymer getStandardRhymer();
+    DefaultCountingOutRhymer getStandardRhymer();
 
-    public DefaultCountingOutRhymer getFalseRhymer();
+    DefaultCountingOutRhymer getFalseRhymer();
 
-    public DefaultCountingOutRhymer getFIFORhymer();
+    DefaultCountingOutRhymer getFIFORhymer();
 
 //  kombinacja alt + -> i alt + <- pozwala przejsc do poprzednio otwartego miejscaw  kodzie
-    public DefaultCountingOutRhymer getHanoiRhymer();
+    DefaultCountingOutRhymer getHanoiRhymer();
 
 }
