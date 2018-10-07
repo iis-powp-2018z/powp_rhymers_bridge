@@ -15,4 +15,4 @@ public class HanoiRhymer extends DefaultCountingOutRhymer {
             super.countIn(in);
     }
 }
-// Bad lines: 4 12 13 14 15
+// alt + '<-' / '->' służy do nawigacji między odwołaniamy używanymi w edytorze
