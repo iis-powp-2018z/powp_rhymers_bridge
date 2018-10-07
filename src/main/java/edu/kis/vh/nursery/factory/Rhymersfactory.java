@@ -1,15 +1,16 @@
 package edu.kis.vh.nursery.factory;
 
-import edu.kis.vh.nursery.defaultCountingOutRhymer;
+import edu.kis.vh.nursery.DefaultCountingOutRhymer;
 
 public interface Rhymersfactory {
 
-    public defaultCountingOutRhymer GetStandardRhymer();
+    public DefaultCountingOutRhymer getStandardRhymer();
 
-    public defaultCountingOutRhymer GetFalseRhymer();
+    public DefaultCountingOutRhymer getFalseRhymer();
 
-    public defaultCountingOutRhymer GetFIFORhymer();
+    public DefaultCountingOutRhymer getFIFORhymer();
 
-    public defaultCountingOutRhymer GetHanoiRhymer();
+//  kombinacja alt + -> i alt + <- pozwala przejsc do poprzednio otwartego miejscaw  kodzie
+    public DefaultCountingOutRhymer getHanoiRhymer();
 
 }
