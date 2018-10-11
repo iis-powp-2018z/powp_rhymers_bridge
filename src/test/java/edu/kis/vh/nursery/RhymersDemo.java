@@ -32,3 +32,5 @@ class RhymersDemo {
 	}
 
 }
+
+//alt + -> przesuwa zakladki w prawo, a alt + <- przesuwa zakladki w lewo
