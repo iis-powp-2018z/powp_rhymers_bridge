@@ -4,6 +4,12 @@ public class FIFORhymer extends DefaultCountingOutRhymer {
 
 	final private DefaultCountingOutRhymer temp = new DefaultCountingOutRhymer();
 
+	/* (non-Javadoc)
+	 * @see edu.kis.vh.nursery.DefaultCountingOutRhymer#countOut()
+	 * Here are details regrding class DefaultCountingOutRhymer
+	 * class included public method countOut()
+	 * class extends DefaultCountingOutRhymer
+	 */
 	@Override
 	public int countOut() {
 		while (!callCheck())
