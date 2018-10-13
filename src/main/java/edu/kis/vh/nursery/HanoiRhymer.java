@@ -6,6 +6,9 @@ public class HanoiRhymer extends DefaultCountingOutRhymer {
 	protected int reportRejected() {
 		return totalRejected;
 	}
+	/* (non-Javadoc)
+	 * @see edu.kis.vh.nursery.DefaultCountingOutRhymer#countIn(int)
+	 */
 	@Override
 	protected void countIn(int in) {
 		if (!callCheck() && in > peekaboo()) {
