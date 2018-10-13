@@ -1,0 +1,6 @@
+[DefaultCountingOutRhymer] ^- [HanoiRhymer]
+[DefaultCountingOutRhymer] ^- [FIFORhymer]
+
+[DefaultRhymersFactory]^- [Rhymersfactory]
+
+[DefaultRhymersFactory]4 <>-* [DefaultCountingOutRhymer]
