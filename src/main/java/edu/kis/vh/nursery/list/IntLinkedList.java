@@ -33,7 +33,7 @@ public class IntLinkedList {
     private int pop() {
         if (isEmpty())
             return EMPTY_VALUE;
-        int ret = last.getValue();
+        final int ret = last.getValue();
         last = last.getPrev();
         return ret;
     }
