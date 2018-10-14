@@ -9,6 +9,7 @@ public class HanoiRhymer extends DefaultCountingOutRhymer {
 		return totalRejected;
 	}
 
+	@Override
 	void countIn(int in) {
 		if (!callCheck() && in > peekaboo())
 			totalRejected++;
