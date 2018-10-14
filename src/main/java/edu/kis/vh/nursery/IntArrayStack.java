@@ -13,26 +13,26 @@ public class IntArrayStack {
 		return total;
 	}
 
-	protected void countIn(int in) {
+	public void countIn(int in) {
 		if (!isFull())
 			numbers[++total] = in;
 	}
 
-	protected boolean callCheck() {
+	public boolean callCheck() {
 		return total == EMPTY_STACK_ERROR;
 	}
 
-	protected boolean isFull() {
+	public boolean isFull() {
 		return total == 11;
 	}
 
-	protected int peekaboo() {
+	public int peekaboo() {
 		if (callCheck())
 			return EMPTY_STACK_ERROR;
 		return numbers[total];
 	}
 
-	protected int countOut() {
+	public int countOut() {
 		if (callCheck())
 			return EMPTY_STACK_ERROR;
 		return numbers[total--];
