@@ -12,7 +12,7 @@ public class DefaultCountingOutRhymer {
 
 	private int total = EmptyStack;
 
-	public int getTotal() {
+	protected int getTotal() {
 		return total;
 	}
 
