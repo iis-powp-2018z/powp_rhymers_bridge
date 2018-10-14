@@ -4,12 +4,14 @@ public class DefaultCountingOutRhymer {
 
 	
 	private static final int sizeOfRhymer = 12;
-
 	private static final int defaultNumber = 1;
-
+	
 	private int[] rhymerArray = new int[sizeOfRhymer];
-
 	private int total = -defaultNumber;
+
+	public int getTotal() {
+		return total;
+	}
 
 	void countIn(int in) {
 		if (!isFull())
