@@ -9,29 +9,29 @@ public class DefaultCountingOutRhymer {
 
 	private int[] rhymerArray = new int[sizeOfRhymer];
 
-	public int total = -defaultNumber;
+	private int total = -defaultNumber;
 
-	public void countIn(int in) {
+	void countIn(int in) {
 		if (!isFull())
 			rhymerArray[++total] = in;
 	}
 
-	public boolean callCheck() {
+	boolean callCheck() {
 		return total == -1;
 	}
 
-	public boolean isFull() {
+	boolean isFull() {
 		return total == 11;
 	}
 
-	protected int peekaboo() {
+	int peekaboo() {
 		if (callCheck()) {
 			return -1;
 		}
 		return rhymerArray[total];
 	}
 
-	public int countOut() {
+	int countOut() {
 		if (callCheck())
 			return -1;
 		return rhymerArray[total--];
