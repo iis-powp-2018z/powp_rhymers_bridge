@@ -17,3 +17,5 @@ public class FIFORhymer extends defaultCountingOutRhymer {
 		return ret;
 	}
 }
+//kombinacja alt + ← oraz alt + → powodują otworzenie kolejnych projektów z grzewa projeku
+//(jeśli nie zostały wcześniej otworzone) lub powoduje przekakiwanie między tymi oknami - o ile są otwarte
