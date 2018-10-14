@@ -15,3 +15,5 @@ public class HanoiRhymer extends defaultCountingOutRhymer {
             super.countIn(in);
     }
 }
+
+//alt + -> zmienia okno odpowiednio w prawo lub lewo
