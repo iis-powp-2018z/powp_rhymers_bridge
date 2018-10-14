@@ -13,6 +13,6 @@ public class HanoiRhymer extends DefaultCountingOutRhymer {
 			totalRejected++;
 		else
 			super.countIn(in);
-	}
+	} 
 }
 // Kombinacje alt + stałka umożliwiają przejscie pomiedzy oknami edytora 
