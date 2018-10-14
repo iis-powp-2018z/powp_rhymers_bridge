@@ -1,10 +1,15 @@
 package edu.kis.vh.nursery;
 
-public class RhymerCounting {
+public class DefaultCountingOutRhymer {
 
-	private int[] rhymerArray = new int[12];
+	
+	private static final int sizeOfRhymer = 12;
 
-	public int total = -1;
+	private static final int defaultNumber = 1;
+
+	private int[] rhymerArray = new int[sizeOfRhymer];
+
+	public int total = -defaultNumber;
 
 	public void countIn(int in) {
 		if (!isFull())
