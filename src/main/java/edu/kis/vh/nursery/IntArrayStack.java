@@ -12,30 +12,30 @@ public class IntArrayStack {
 
 	private int total = EmptyStack;
 
-	protected int getTotal() {
+	public int getTotal() {
 		return total;
 	}
 
-	protected void countIn(final int in) {
+	public void countIn(final int in) {
 		if (!isFull())
 			numbers[++total] = in;
 	}
 
-	protected boolean callCheck() {
+	public boolean callCheck() {
 		return total == EmptyStack;
 	}
 
-	protected boolean isFull() {
+	public boolean isFull() {
 		return total == fullStack;
 	}
 
-	protected int peekaboo() {
+	public int peekaboo() {
 		if (callCheck())
 			return EmptyStack;
 		return numbers[total];
 	}
 
-	protected int countOut() {
+	public int countOut() {
 		if (callCheck())
 			return EmptyStack;
 		return numbers[total--];

@@ -7,7 +7,7 @@ public class RhymersJUnitTest {
 
 	@Test
 	public void testCountIn() {
-		DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
+		IntArrayStack rhymer = new IntArrayStack();
 		int testValue = 4;
 		rhymer.countIn(testValue);
 
