@@ -2,60 +2,39 @@ package edu.kis.vh.nursery;
 
 public class DefaultCountingOutRhymer {
 
-	private static final int FULL_STACK = 11;
+	IntArrayStack intArrayStack= new IntArrayStack();
 
-	private static final int STACK_CAPACITY = 12;
+	public DefaultCountingOutRhymer(IntArrayStack intArrayStack) {
+		super();
+		this.intArrayStack = intArrayStack;
+	}
 
-	private static final int EMPTY_STACK_ERROR = -1;
-
-	private int[] NUMBERS = new int[STACK_CAPACITY];
-
-	public int total = EMPTY_STACK_ERROR;
+	public DefaultCountingOutRhymer() {
+		super();
+	}
 
 	public void countIn(int in) {
-		if (!isFull())
-			NUMBERS[++total] = in;
+		intArrayStack.countIn(in);
 	}
-
 	public boolean callCheck() {
-		return total == EMPTY_STACK_ERROR;
+		return intArrayStack.callCheck();
 	}
-
 	public int getTotal() {
-		return total;
+		return intArrayStack.getTotal();
 	}
-
 	public void setTotal(int total) {
-		this.total = total;
+		intArrayStack.setTotal(total);
 	}
-
 	public boolean isFull() {
-		return total == FULL_STACK;
+		return intArrayStack.isFull();
 	}
-
-	protected int peekaboo() {
-		if (callCheck())
-			return EMPTY_STACK_ERROR;
-		return NUMBERS[total];
-	}
-
 	public int countOut() {
-		if (callCheck())
-			return EMPTY_STACK_ERROR;
-		return NUMBERS[total--];
+		return intArrayStack.countOut();
 	}
 
-	private static int getEmptyStackError() {
-		return EMPTY_STACK_ERROR;
+	public int peekaboo() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
-
-	private static int getStackCapacity() {
-		return STACK_CAPACITY;
-	}
-
-	private static int getFullStack() {
-		return FULL_STACK;
-	}
-
 } 
  
