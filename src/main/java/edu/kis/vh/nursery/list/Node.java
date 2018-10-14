@@ -10,4 +10,3 @@ public class Node {
 	}
 
 }
-// kombinacja klawiszy alt + -> lub alt + <- powoduje odpowiednio przeskok do kolejnej zakłądki programu w prawo lub lewo.
