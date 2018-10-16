@@ -4,7 +4,7 @@ public class DefaultCountingOutRhymer {
 
     private static final int STACK_CAPACITY = 12;
     private static final int EMPTY_STACK_VALUE = -1;
-    private static final int STACK_ISFULL = 11;
+    private static final int STACK_FULL_VALUE = 11;
 
     private final int[] NUMBERS = new int[STACK_CAPACITY];
     private int total = EMPTY_STACK_VALUE;
@@ -24,7 +24,7 @@ public class DefaultCountingOutRhymer {
     }
 
     boolean isFull() {
-        return total == STACK_ISFULL;
+        return total == STACK_FULL_VALUE;
     }
 
     int peekaboo() {
