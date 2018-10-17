@@ -1,13 +1,12 @@
 package edu.kis.vh.nursery.collections;
 
-public class IntArrayStack implements StackImpl {
+public class IntArrayCollection implements CollectionImpl {
 
     private static final int STACK_CAPACITY = 12;
-    private static final int EMPTY_STACK_VALUE = -1;
     private static final int STACK_FULL_VALUE = 11;
 
     private final int[] NUMBERS = new int[STACK_CAPACITY];
-    private int total = EMPTY_STACK_VALUE;
+    private int total = EMPTY_COLLECTION_VALUE;
 
     @Override
     public void push(int in) {
@@ -18,7 +17,7 @@ public class IntArrayStack implements StackImpl {
 
     @Override
     public boolean isEmpty() {
-        return total == EMPTY_STACK_VALUE;
+        return total == EMPTY_COLLECTION_VALUE;
     }
 
     @Override
@@ -29,7 +28,7 @@ public class IntArrayStack implements StackImpl {
     @Override
     public int pop() {
         if (isEmpty()) {
-            return EMPTY_STACK_VALUE;
+            return EMPTY_COLLECTION_VALUE;
         }
         return NUMBERS[total--];
     }
@@ -42,7 +41,7 @@ public class IntArrayStack implements StackImpl {
     @Override
     public int top() {
         if (isEmpty()) {
-            return EMPTY_STACK_VALUE;
+            return EMPTY_COLLECTION_VALUE;
         }
         return NUMBERS[total];
     }

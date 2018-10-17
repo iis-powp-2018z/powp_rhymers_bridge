@@ -1,12 +1,12 @@
 package edu.kis.vh.nursery;
 
-import edu.kis.vh.nursery.collections.IntArrayStack;
+import edu.kis.vh.nursery.collections.CollectionImpl;
+import edu.kis.vh.nursery.collections.IntArrayCollection;
 import edu.kis.vh.nursery.collections.IntLinkedList;
-import edu.kis.vh.nursery.collections.StackImpl;
 
 public class DefaultCountingOutRhymer {
 
-    private StackImpl stackImpl;
+    private CollectionImpl collectionImpl;
 
     public DefaultCountingOutRhymer() {
         this("array");
@@ -15,10 +15,10 @@ public class DefaultCountingOutRhymer {
     public DefaultCountingOutRhymer(String type) {
         switch (type) {
             case "array":
-                stackImpl = new IntArrayStack();
+                collectionImpl = new IntArrayCollection();
                 break;
             case "list":
-                stackImpl = new IntLinkedList();
+                collectionImpl = new IntLinkedList();
                 break;
             default:
                 System.out.println("Blad - parametr nieznany");
@@ -27,26 +27,26 @@ public class DefaultCountingOutRhymer {
     }
 
     public int getTotal() {
-        return stackImpl.getSize();
+        return collectionImpl.getSize();
     }
 
     public void countIn(int in) {
-        stackImpl.push(in);
+        collectionImpl.push(in);
     }
 
     boolean isFull() {
-        return stackImpl.isFull();
+        return collectionImpl.isFull();
     }
 
     int peekaboo() {
-        return stackImpl.top();
+        return collectionImpl.top();
     }
 
     int countOut() {
-        return stackImpl.pop();
+        return collectionImpl.pop();
     }
 
     boolean callCheck() {
-        return stackImpl.isEmpty();
+        return collectionImpl.isEmpty();
     }
 }

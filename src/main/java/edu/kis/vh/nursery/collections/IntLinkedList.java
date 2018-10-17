@@ -1,9 +1,9 @@
 package edu.kis.vh.nursery.collections;
 
-public class IntLinkedList implements StackImpl {
+public class IntLinkedList implements CollectionImpl {
 
     private Node last;
-    private int size = 0;
+    private int size;
 
     @Override
     public boolean isFull() {
@@ -30,7 +30,7 @@ public class IntLinkedList implements StackImpl {
     @Override
     public int top() {
         if (isEmpty()) {
-            return -1;
+            return EMPTY_COLLECTION_VALUE;
         }
 
         return last.getValue();
@@ -39,7 +39,7 @@ public class IntLinkedList implements StackImpl {
     @Override
     public int pop() {
         if (isEmpty()) {
-            return -1;
+            return EMPTY_COLLECTION_VALUE;
         }
 
         int ret = last.getValue();
