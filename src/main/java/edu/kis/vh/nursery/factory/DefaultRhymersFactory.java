@@ -11,7 +11,6 @@ public class DefaultRhymersFactory implements RhymersFactory {
 
 	/**
 	 * Method for get standard rhymer
-	 *
 	 * @return DefaultCountingOutRhymer
 	 */
 	@Override
