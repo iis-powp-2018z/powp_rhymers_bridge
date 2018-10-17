@@ -1,4 +1,4 @@
-package edu.kis.vh.nursery.list;
+package stack;
 
 import edu.kis.vh.nursery.IntArray;
 
