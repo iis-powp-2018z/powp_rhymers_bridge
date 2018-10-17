@@ -1,7 +1,7 @@
 package edu.kis.vh.nursery.collections;
 
 public interface CollectionImpl {
-    int EMPTY_COLLECTION_VALUE = -1;
+    int EMPTY_COLLECTION_VALUE = 0;
 
     boolean isFull();
 
