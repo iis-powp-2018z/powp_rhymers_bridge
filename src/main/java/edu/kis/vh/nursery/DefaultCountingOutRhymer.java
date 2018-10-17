@@ -8,6 +8,10 @@ public class DefaultCountingOutRhymer {
 
     private StackImpl stackImpl;
 
+    public DefaultCountingOutRhymer() {
+        this("array");
+    }
+
     public DefaultCountingOutRhymer(String type) {
         switch (type) {
             case "array":
