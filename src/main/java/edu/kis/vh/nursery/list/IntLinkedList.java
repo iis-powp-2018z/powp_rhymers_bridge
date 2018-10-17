@@ -1,6 +1,6 @@
 package edu.kis.vh.nursery.list;
 
-public class IntLinkedList {
+public class IntLinkedList implements IntLinked {
 
 	private static final int EMPTY_STACK_ERROR = -1;
 	Node last;

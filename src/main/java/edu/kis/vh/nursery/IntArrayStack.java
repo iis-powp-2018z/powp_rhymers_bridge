@@ -4,7 +4,7 @@ package edu.kis.vh.nursery;
  * @author Kamila
  * implementacja stosu opartego na tablicy z klasy DefaultCountingOutRhymer
  */
-public class IntArrayStack {
+public class IntArrayStack implements IntArray {
 	private static final int FULL = 11;
 
 	private static final int EMPTY_STACK_ERROR = -1;
