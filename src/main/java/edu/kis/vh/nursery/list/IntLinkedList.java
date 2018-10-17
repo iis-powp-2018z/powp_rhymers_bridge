@@ -18,7 +18,7 @@ public class IntLinkedList {
 		}
 	}
 
-    private boolean isEmpty() {
+    protected boolean isEmpty() {
 		return last == null;
 	}
 

@@ -1,44 +1,40 @@
 package edu.kis.vh.nursery;
 
+import edu.kis.vh.nursery.list.IntArrayStack;
+
 public class DefaultCountingOutRhymer {
 
-    private static final int STACK_CAPACITY = 12;
-    private static final int EMPTY_STACK_VALUE = -1;
-    private static final int STACK_FULL_VALUE = 11;
+    private final IntArrayStack intArrayStack;
 
-    private final int[] NUMBERS = new int[STACK_CAPACITY];
-    private int total = EMPTY_STACK_VALUE;
+    public DefaultCountingOutRhymer(IntArrayStack intArrayStack) {
+        this.intArrayStack = intArrayStack;
+    }
+
+    public DefaultCountingOutRhymer() {
+        intArrayStack = new IntArrayStack();
+    }
 
     public int getTotal() {
-        return total;
+        return intArrayStack.getTotal();
     }
 
     public void countIn(int in) {
-        if (!isFull()) {
-            NUMBERS[++total] = in;
-        }
-    }
-
-    boolean callCheck() {
-        return total == EMPTY_STACK_VALUE;
+        intArrayStack.countIn(in);
     }
 
     boolean isFull() {
-        return total == STACK_FULL_VALUE;
+        return intArrayStack.isFull();
     }
 
     int peekaboo() {
-        if (callCheck()) {
-            return EMPTY_STACK_VALUE;
-        }
-        return NUMBERS[total];
+        return intArrayStack.peekaboo();
     }
 
-    protected int countOut() {
-        if (callCheck()) {
-            return EMPTY_STACK_VALUE;
-        }
-        return NUMBERS[total--];
+    int countOut() {
+        return intArrayStack.countOut();
     }
 
+    boolean callCheck() {
+        return intArrayStack.callCheck();
+    }
 }
