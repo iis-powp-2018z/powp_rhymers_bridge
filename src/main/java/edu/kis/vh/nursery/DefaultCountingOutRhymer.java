@@ -2,9 +2,9 @@ package edu.kis.vh.nursery;
 
 public class DefaultCountingOutRhymer {
 
-	IntArrayStack intArrayStack= new IntArrayStack();
+	IntArrayStack intArrayStack = new IntArrayStack();
 
-	public DefaultCountingOutRhymer(IntArrayStack intArrayStack) {
+	public DefaultCountingOutRhymer(IntArrayStack intArrayStack) { 
 		super();
 		this.intArrayStack = intArrayStack;
 	}
@@ -16,18 +16,15 @@ public class DefaultCountingOutRhymer {
 	public void countIn(int in) {
 		intArrayStack.countIn(in);
 	}
+
 	public boolean callCheck() {
 		return intArrayStack.callCheck();
 	}
-	public int getTotal() {
-		return intArrayStack.getTotal();
-	}
-	public void setTotal(int total) {
-		intArrayStack.setTotal(total);
-	}
+
 	public boolean isFull() {
 		return intArrayStack.isFull();
 	}
+
 	public int countOut() {
 		return intArrayStack.countOut();
 	}
