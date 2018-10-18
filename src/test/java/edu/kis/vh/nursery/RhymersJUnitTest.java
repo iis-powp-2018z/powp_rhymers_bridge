@@ -1,5 +1,6 @@
 package edu.kis.vh.nursery;
 
+import edu.kis.vh.nursery.collections.IntArrayCollection;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -32,14 +33,17 @@ public class RhymersJUnitTest {
 	public void testIsFull() {
 		DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
 		int STACK_CAPACITY = 12;
-		for (int i = 0; i < STACK_CAPACITY; i++) {
+
+		for (int i = 1; i < STACK_CAPACITY; i++) {
 			boolean result = rhymer.isFull();
 			Assert.assertFalse(result);
 			rhymer.countIn(888);
 		}
 
-		boolean result = rhymer.isFull();
-		Assert.assertTrue(result);
+		if (rhymer.collectionImpl instanceof IntArrayCollection) {
+			boolean result = rhymer.isFull();
+			Assert.assertTrue(result);
+		}
 	}
 
 	@Test

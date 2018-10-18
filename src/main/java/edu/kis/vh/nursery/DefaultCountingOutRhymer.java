@@ -6,7 +6,7 @@ import edu.kis.vh.nursery.collections.IntLinkedList;
 
 public class DefaultCountingOutRhymer {
 
-    private CollectionImpl collectionImpl;
+    CollectionImpl collectionImpl;
 
     public DefaultCountingOutRhymer() {
         this("array");
