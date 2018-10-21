@@ -113,7 +113,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-31" />
     <option name="y" value="197" />
     <option name="width" value="1400" />
@@ -190,7 +190,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540134654303" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540134795313" />
     <property name="extract.method.default.visibility" value="packageLocal" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
@@ -207,7 +207,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.RhymersJUnitTest">
     <configuration name="RhymersDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.kis.vh.nursery.RhymersDemo" />
       <module name="powp-rhymers" />
@@ -221,8 +221,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RhymersJUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="powp-rhymers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.kis.vh.nursery.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.kis.vh.nursery" />
+      <option name="MAIN_CLASS_NAME" value="edu.kis.vh.nursery.RhymersJUnitTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.RhymersDemo" />
+      <item itemvalue="JUnit.RhymersJUnitTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RhymersJUnitTest" />
         <item itemvalue="Application.RhymersDemo" />
       </list>
     </recent_temporary>
