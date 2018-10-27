@@ -1,25 +1,23 @@
 package edu.kis.vh.nursery.list;
 
-public class IntLinkedList {
+public class IntLinkedList implements StackImpementation {
 
 	private Node last;
 	private int listSize;
 	
-	/**
-	 * Check if list is full.
-	 *
-	 * @return always false.
+	/* (non-Javadoc)
+	 * @see edu.kis.vh.nursery.list.StackImpementation#isFull()
 	 */
+	@Override
 	public boolean isFull() {
 		return false; // TODO: needs remove
 	}
 	
 
-	/**
-	 * Add integer to end of the stack.
-	 *
-	 * @param i - integer to add.
+	/* (non-Javadoc)
+	 * @see edu.kis.vh.nursery.list.StackImpementation#push(int)
 	 */
+	@Override
 	public void push(int i) {
 		if (last == null)
 			last = new Node(i);
@@ -31,31 +29,28 @@ public class IntLinkedList {
 		listSize++;
 	}
 	
-	/**
-	 * Check if list is empty.
-	 *
-	 * @return true if stack is empty otherwise false.
+	/* (non-Javadoc)
+	 * @see edu.kis.vh.nursery.list.StackImpementation#isEmpty()
 	 */
+	@Override
 	public boolean isEmpty() {
 		return last == null;
 	}
 	
-	/**
-	 * Get value from last added element to stack.
-	 *
-	 * @return value of last element of stack.
+	/* (non-Javadoc)
+	 * @see edu.kis.vh.nursery.list.StackImpementation#top()
 	 */
+	@Override
 	public int top() {
 		if (isEmpty())
 			return -1;
 		return last.value;
 	}
 
-	/**
-	 * Pop out value from top of the list. 
-	 *
-	 * @return last element of stack if stack is not empty otherwise return -1
+	/* (non-Javadoc)
+	 * @see edu.kis.vh.nursery.list.StackImpementation#pop()
 	 */
+	@Override
 	public int pop() {
 		
 		if (isEmpty())
@@ -68,6 +63,10 @@ public class IntLinkedList {
 		return ret;
 	}
 	
+	/* (non-Javadoc)
+	 * @see edu.kis.vh.nursery.list.StackImpementation#getSize()
+	 */
+	@Override
 	public int getSize() {
 		return listSize;
 	}
