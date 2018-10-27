@@ -3,7 +3,7 @@ package edu.kis.vh.nursery.list;
 public class Node {
 
 	public int value;
-	public Node next;
+	Node prev, next;
 
 	Node(int i) {
 		value = i;
