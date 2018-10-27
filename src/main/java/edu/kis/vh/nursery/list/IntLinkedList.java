@@ -1,15 +1,16 @@
 package edu.kis.vh.nursery.list;
 
-class IntLinkedList {
+public class IntLinkedList {
 
 	private Node last;
+	private int listSize;
 	
 	/**
 	 * Check if list is full.
 	 *
 	 * @return always false.
 	 */
-	protected static boolean isFull() {
+	public boolean isFull() {
 		return false; // TODO: needs remove
 	}
 	
@@ -19,7 +20,7 @@ class IntLinkedList {
 	 *
 	 * @param i - integer to add.
 	 */
-	protected void push(int i) {
+	public void push(int i) {
 		if (last == null)
 			last = new Node(i);
 		else {
@@ -27,6 +28,7 @@ class IntLinkedList {
 			last.next.prev = last;
 			last = last.next;
 		}
+		listSize++;
 	}
 	
 	/**
@@ -34,7 +36,7 @@ class IntLinkedList {
 	 *
 	 * @return true if stack is empty otherwise false.
 	 */
-	private boolean isEmpty() {
+	public boolean isEmpty() {
 		return last == null;
 	}
 	
@@ -54,7 +56,7 @@ class IntLinkedList {
 	 *
 	 * @return last element of stack if stack is not empty otherwise return -1
 	 */
-	protected int pop() {
+	public int pop() {
 		
 		if (isEmpty())
 			return -1;
@@ -62,7 +64,12 @@ class IntLinkedList {
 		int ret = last.value;
 		last = last.prev;
 		
+		listSize--;
 		return ret;
+	}
+	
+	public int getSize() {
+		return listSize;
 	}
 
 }
