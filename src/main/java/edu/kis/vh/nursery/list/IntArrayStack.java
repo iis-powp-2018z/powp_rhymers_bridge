@@ -1,4 +1,4 @@
-package edu.kis.vh.nursery;
+package edu.kis.vh.nursery.list;
 
 public class IntArrayStack {
 
@@ -14,27 +14,27 @@ public class IntArrayStack {
 		return total;
 	}
 
-	void countIn(int in) {
+	public void countIn(int in) {
 		if (!isFull())
 			rhymerArray[++total] = in;
 	}
 
-	boolean callCheck() {
+	public boolean callCheck() {
 		return total == INITIAL_VALUE;
 	}
 
-	boolean isFull() {
+	public boolean isFull() {
 		return total == IS_FULL_RHYMER;
 	}
 
-	int peekaboo() {
+	public int peekaboo() {
 		if (callCheck()) {
 			return INITIAL_VALUE;
 		}
 		return rhymerArray[total];
 	}
 
-	int countOut() {
+	public int countOut() {
 		if (callCheck())
 			return -1;
 		return rhymerArray[total--];
