@@ -3,11 +3,11 @@ package edu.kis.vh.nursery;
 public class DefaultCountingOutRhymer {
 
 	
-	private static final int RHYMER_CAPACITY = 12;
+	private static final int STACK_CAPACITY = 12;
 	private static final int INITIAL_VALUE = -1;
 	private static final int IS_FULL_RHYMER = 11;
 	
-	private int[] rhymerArray = new int[RHYMER_CAPACITY];
+	private int[] rhymerArray = new int[STACK_CAPACITY];
 	private int total = INITIAL_VALUE;
 
 	public int getTotal() {
