@@ -10,6 +10,3 @@ class Node {
 	}
 
 }
-
-// Alt + ← Go to previous opened editor. Cursor is placed where it was before you opened the next editor
-// Alt + → Similar Alt + ← but opens the next editor
