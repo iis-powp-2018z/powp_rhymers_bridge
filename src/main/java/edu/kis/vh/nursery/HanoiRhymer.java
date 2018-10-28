@@ -15,3 +15,6 @@ public class HanoiRhymer extends defaultCountingOutRhymer {
             super.countIn(in);
     }
 }
+
+//Alt + strzałka przeskakuje pomiędzy ostatnio edytowanymi onkami
+
