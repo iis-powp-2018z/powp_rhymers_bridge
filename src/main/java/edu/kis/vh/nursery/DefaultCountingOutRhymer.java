@@ -18,11 +18,11 @@ public class DefaultCountingOutRhymer {
 			numbers[++total] = in;
 	}
 
-public boolean callCheck() {
+	protected boolean callCheck() {
 		return total == TOTAL_START;
 	}
 
-	public boolean isFull() {
+	protected boolean isFull() {
 		return total == FULL_STACK;
 	}
 
@@ -32,7 +32,7 @@ public boolean callCheck() {
 		return numbers[total];
 	}
 
-	public int countOut() {
+	protected int countOut() {
 		if (callCheck())
 			return TOTAL_START;
 		return numbers[total--];
