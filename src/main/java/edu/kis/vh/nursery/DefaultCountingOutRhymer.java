@@ -1,18 +1,30 @@
 package edu.kis.vh.nursery;
+import edu.kis.vh.nursery.collections.IntArrayStack;
 import edu.kis.vh.nursery.collections.IntLinkedList;
 import edu.kis.vh.nursery.collections.StackImpementation;
 
 public class DefaultCountingOutRhymer {
 
-	private final StackImpementation stackImplementation;
+	private StackImpementation stackImplementation;
 	
-	public DefaultCountingOutRhymer(StackImpementation stackImplementation) {
-		this.stackImplementation = stackImplementation;
-	}
-
 	public DefaultCountingOutRhymer() {
-		stackImplementation = new IntLinkedList();
+		this("array");
 	}
+	
+	public DefaultCountingOutRhymer(String string) {
+        switch (string) {
+            case "array":
+            	stackImplementation = new IntArrayStack();
+                break;
+            case "list":
+            	stackImplementation = new IntLinkedList();
+                break;
+            default:
+                System.out.println("Brak parametru");
+                break;
+        }
+    }
+
 
 	public int getTotal() {
 		return stackImplementation.getSize();
