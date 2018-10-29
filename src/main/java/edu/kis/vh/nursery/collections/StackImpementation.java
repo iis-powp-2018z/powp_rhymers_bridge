@@ -2,6 +2,7 @@ package edu.kis.vh.nursery.collections;
 
 public interface StackImpementation {
 
+	int EMPTY_STACK = -1;
 	/**
 	 * Check if list is full.
 	 *

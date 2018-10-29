@@ -1,43 +1,47 @@
 package edu.kis.vh.nursery.collections;
 
-public class IntArrayStack {
+public class IntArrayStack implements StackImpementation {
 
-	
 	private static final int STACK_CAPACITY = 12;
-	private static final int INITIAL_VALUE = -1;
 	private static final int IS_FULL_RHYMER = 11;
-	
+
 	private int[] rhymerArray = new int[STACK_CAPACITY];
-	private int total = INITIAL_VALUE;
+	private int total = EMPTY_STACK;
 
-	public int getTotal() {
-		return total;
-	}
-
-	public void countIn(int in) {
-		if (!isFull())
-			rhymerArray[++total] = in;
-	}
-
-	public boolean callCheck() {
-		return total == INITIAL_VALUE;
-	}
-
+	@Override
 	public boolean isFull() {
 		return total == IS_FULL_RHYMER;
 	}
+	
+	@Override
+	public void push(int i) {
+		if (!isFull())
+			rhymerArray[++total] = i;
+	}
 
-	public int peekaboo() {
-		if (callCheck()) {
-			return INITIAL_VALUE;
+	@Override
+	public boolean isEmpty() {
+		return total == EMPTY_STACK;
+	}
+
+	@Override
+	public int top() {
+		if (isEmpty()) {
+			return EMPTY_STACK;
 		}
 		return rhymerArray[total];
 	}
 
-	public int countOut() {
-		if (callCheck())
-			return -1;
+	@Override
+	public int pop() {
+		if (isEmpty())
+			return EMPTY_STACK;
 		return rhymerArray[total--];
+	}
+
+	@Override
+	public int getSize() {
+		return total;
 	}
 
 }

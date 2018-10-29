@@ -12,21 +12,21 @@ public class RhymersJUnitTest {
 	@Test
 	public void testCountIn() {
 		IntArrayStack rhymer = new IntArrayStack();
-		rhymer.countIn(TEST_VALUE);
+		rhymer.push(TEST_VALUE);
 
-		int result = rhymer.peekaboo();
+		int result = rhymer.top();
 		Assert.assertEquals(TEST_VALUE, result);
 	}
 
 	@Test
 	public void testCallCheck() {
 		IntArrayStack rhymer = new IntArrayStack();
-		boolean result = rhymer.callCheck();
+		boolean result = rhymer.isEmpty();
 		Assert.assertTrue(result);
 
-		rhymer.countIn(888);
+		rhymer.push(888);
 
-		result = rhymer.callCheck();
+		result = rhymer.isEmpty();
 		Assert.assertFalse(result);
 	}
 
@@ -37,7 +37,7 @@ public class RhymersJUnitTest {
 		for (int i = 0; i < STACK_CAPACITY; i++) {
 			boolean result = rhymer.isFull();
 			Assert.assertFalse(result);
-			rhymer.countIn(888);
+			rhymer.push(888);
 		}
 
 		boolean result = rhymer.isFull();
@@ -48,14 +48,14 @@ public class RhymersJUnitTest {
 	public void testPeekaboo() {
 		IntArrayStack rhymer = new IntArrayStack();
 		
-		int result = rhymer.peekaboo();
+		int result = rhymer.top();
 		Assert.assertEquals(EMPTY_STACK_VALUE, result);
 
-		rhymer.countIn(TEST_VALUE);
+		rhymer.push(TEST_VALUE);
 
-		result = rhymer.peekaboo();
+		result = rhymer.top();
 		Assert.assertEquals(TEST_VALUE, result);
-		result = rhymer.peekaboo();
+		result = rhymer.top();
 		Assert.assertEquals(TEST_VALUE, result);
 	}
 
@@ -63,15 +63,15 @@ public class RhymersJUnitTest {
 	public void testCountOut() {
 		IntArrayStack rhymer = new IntArrayStack();
 		
-		int result = rhymer.countOut();
+		int result = rhymer.pop();
 		Assert.assertEquals(EMPTY_STACK_VALUE, result);
 
 
-		rhymer.countIn(TEST_VALUE);
+		rhymer.push(TEST_VALUE);
 
-		result = rhymer.countOut();
+		result = rhymer.pop();
 		Assert.assertEquals(TEST_VALUE, result);
-		result = rhymer.countOut();
+		result = rhymer.pop();
 		Assert.assertEquals(EMPTY_STACK_VALUE, result);
 	}
 
