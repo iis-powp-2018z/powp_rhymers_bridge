@@ -3,14 +3,13 @@ package edu.kis.vh.nursery.collections;
 public class IntArrayStack implements StackImpementation {
 
 	private static final int STACK_CAPACITY = 12;
-	private static final int IS_FULL_RHYMER = 11;
 
 	private int[] rhymerArray = new int[STACK_CAPACITY];
 	private int total = EMPTY_STACK;
 
 	@Override
 	public boolean isFull() {
-		return total == IS_FULL_RHYMER;
+		return total == STACK_CAPACITY - 1;
 	}
 	
 	@Override

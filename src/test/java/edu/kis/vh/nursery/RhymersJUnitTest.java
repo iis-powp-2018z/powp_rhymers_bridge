@@ -8,7 +8,7 @@ import edu.kis.vh.nursery.collections.IntArrayStack;
 public class RhymersJUnitTest {
 
 	private static final int TEST_VALUE = 4;
-	private static final int EMPTY_STACK_VALUE = -1;
+	private static final int EMPTY_STACK_VALUE = 0;
 	@Test
 	public void testCountIn() {
 		IntArrayStack rhymer = new IntArrayStack();
