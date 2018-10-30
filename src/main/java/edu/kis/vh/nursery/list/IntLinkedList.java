@@ -3,8 +3,6 @@ package edu.kis.vh.nursery.list;
 public class IntLinkedList {
 
 	private Node last;
-	//int i;
-
 	protected void push(int i) {
 		if (last == null)
 			last = new Node(i);
