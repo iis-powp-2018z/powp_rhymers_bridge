@@ -10,3 +10,4 @@ public class Node {
 	}
 
 }
+//alt + strza³ki pozwala przenosiæ siê miêdzy klasami, odpowiednio w lewo lub w prawo 
