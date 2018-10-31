@@ -1,9 +1,22 @@
 package edu.kis.vh.nursery;
 
+/**
+ * @author Radek
+ * Klasa FIFORhymer dziedziczy po klasie DefaultCountingOutRhymer
+ */
 public class FIFORhymer extends DefaultCountingOutRhymer {
 
+	
+	/**
+	 * utowrzenie nwego obiektu DefaultCountingOutRhymer
+	 */
 	public DefaultCountingOutRhymer temp = new DefaultCountingOutRhymer();
 
+	
+	/* (non-Javadoc)
+	 * @see edu.kis.vh.nursery.DefaultCountingOutRhymer#countOut()
+	 * zastąpienie z nadklasy metody countOut
+	 */
 	@Override
 	protected int countOut() {
 		while (!callCheck())
@@ -17,5 +30,3 @@ public class FIFORhymer extends DefaultCountingOutRhymer {
 		return ret;
 	}
 }
-//kombinacja alt + ← oraz alt + → powodują otworzenie kolejnych projektów z grzewa projeku
-//(jeśli nie zostały wcześniej otworzone) lub powoduje przekakiwanie między tymi oknami - o ile są otwarte
