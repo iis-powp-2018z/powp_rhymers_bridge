@@ -12,7 +12,7 @@ public class defaultCountingOutRhymer {
         numbers = new int[STACK_SIZE];
     }
 
-    public int getPointer() {
+    private int getPointer() {
         return pointer;
     }
 
@@ -22,17 +22,17 @@ public class defaultCountingOutRhymer {
     }
 
     boolean isEmpty() {
-        return pointer == STACK_EMPTY;
+        return getPointer() == STACK_EMPTY;
     }
 
     boolean isFull() {
-        return pointer == STACK_SIZE - 1;
+        return getPointer() == STACK_SIZE - 1;
     }
 
     int peekaboo() {
         if (isEmpty())
             return -1;
-        return numbers[pointer];
+        return numbers[getPointer()];
     }
 
     public int countOut() {
