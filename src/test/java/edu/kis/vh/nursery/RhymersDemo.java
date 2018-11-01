@@ -24,7 +24,7 @@ class RhymersDemo {
             System.out.println();
         }
 
-        System.out.println("stackSize rejected is "
+        System.out.println("pointer rejected is "
                 + ((HanoiRhymer) rhymers[3]).reportRejected());
 
     }

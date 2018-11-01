@@ -30,7 +30,7 @@ public class RhymersJUnitTest {
     @Test
     public void testIsFull() {
         defaultCountingOutRhymer rhymer = new defaultCountingOutRhymer();
-        final int STACK_CAPACITY = 12;
+        final int STACK_CAPACITY = 15;
         for (int i = 0; i < STACK_CAPACITY; i++) {
             boolean result = rhymer.isFull();
             Assert.assertEquals(false, result);

@@ -4,6 +4,10 @@ public class FIFORhymer extends defaultCountingOutRhymer {
 
     public defaultCountingOutRhymer dcor = new defaultCountingOutRhymer();
 
+    public FIFORhymer() {
+        super();
+    }
+
     @Override
     public int countOut() {
         while (!isEmpty())
