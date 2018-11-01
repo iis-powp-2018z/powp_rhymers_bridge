@@ -1,6 +1,6 @@
 package edu.kis.vh.nursery;
 
-public class defaultCountingOutRhymer {
+public class DefaultCountingOutRhymer {
 
     private static final int STACK_SIZE = 15;
     private static final int STACK_EMPTY = -1;
@@ -8,7 +8,7 @@ public class defaultCountingOutRhymer {
 
     private int[] numbers;
 
-    public defaultCountingOutRhymer() {
+    public DefaultCountingOutRhymer() {
         numbers = new int[STACK_SIZE];
     }
 
