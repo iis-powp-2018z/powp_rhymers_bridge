@@ -76,3 +76,5 @@ public class RhymersJUnitTest {
     }
 
 }
+
+//Przechodzenie miedzy otwartymi plikami w IDE
