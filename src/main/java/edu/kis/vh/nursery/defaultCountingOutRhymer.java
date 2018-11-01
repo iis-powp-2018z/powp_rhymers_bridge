@@ -2,8 +2,8 @@ package edu.kis.vh.nursery;
 
 public class defaultCountingOutRhymer {
 
-    public static final int STACK_SIZE = 15;
-    public static final int STACK_EMPTY = -1;
+    private static final int STACK_SIZE = 15;
+    private static final int STACK_EMPTY = -1;
 
     private int[] numbers;
     private int pointer = STACK_EMPTY;
@@ -17,15 +17,15 @@ public class defaultCountingOutRhymer {
             numbers[++pointer] = input;
     }
 
-    public boolean isEmpty() {
+    boolean isEmpty() {
         return pointer == STACK_EMPTY;
     }
 
-    public boolean isFull() {
+    boolean isFull() {
         return pointer == STACK_SIZE - 1;
     }
 
-    protected int peekaboo() {
+    int peekaboo() {
         if (isEmpty())
             return -1;
         return numbers[pointer];
