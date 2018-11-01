@@ -4,12 +4,16 @@ public class defaultCountingOutRhymer {
 
     private static final int STACK_SIZE = 15;
     private static final int STACK_EMPTY = -1;
+    private int pointer = STACK_EMPTY;
 
     private int[] numbers;
-    private int pointer = STACK_EMPTY;
 
     public defaultCountingOutRhymer() {
         numbers = new int[STACK_SIZE];
+    }
+
+    public int getPointer() {
+        return pointer;
     }
 
     public void countIn(int input) {
