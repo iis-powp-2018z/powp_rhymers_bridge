@@ -6,14 +6,14 @@ public class DefaultCountingOutRhymer {
 	private static final int NUMBER_OF_ELEMENTS = 12;
 	private static final int MAX_CAPACITY = 11;
 
-	private int[] numbers = new int[NUMBER_OF_ELEMENTS];
+	private final int[] numbers = new int[NUMBER_OF_ELEMENTS];
 	private int total = EMPTY_RHYMER_INDICATOR;
 
     public int getTotal() {
 		return total;
 	}
 
-	public void countIn(int in) {
+	public void countIn(final int in) {
         if (!isFull())
             numbers[++total] = in;
     }
