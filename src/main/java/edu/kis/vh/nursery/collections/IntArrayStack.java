@@ -1,6 +1,6 @@
 package edu.kis.vh.nursery.collections;
 
-public class IntArrayStack implements StackImpementation {
+public class IntArrayStack implements StackImplementation {
 
 	private int[] rhymerArray = new int[STACK_CAPACITY];
 	private int total = EMPTY_STACK;
