@@ -1,5 +1,11 @@
 package edu.kis.vh.nursery.list;
 
+/**
+ * Implementacja listy dwukierunkowej, której wartościami
+ * są liczby calkowite.
+ * @author Monika
+ *
+ */
 public class IntLinkedList {
 
 	private static final int EMPTY_STACK = -1;
@@ -7,6 +13,10 @@ public class IntLinkedList {
 	private Node last;
 	private int i;
 
+	/**
+	 * Dodaje element na koncu listy
+	 * @param i - liczba calkowita
+	 */
 	public void push(final int i) {
 		if (last == null)
 			last = new Node(i);
@@ -17,6 +27,10 @@ public class IntLinkedList {
 		}
 	}
 
+	/**
+	 * Zwraca true, jesli lista jest pusta
+	 * @return
+	 */
 	public boolean isEmpty() {
 		return last == null;
 	}
@@ -25,12 +39,21 @@ public class IntLinkedList {
 		return false;
 	}
 
+	/**
+	 * Zwraca wartosc ostatniego elementu
+	 * na liscie
+	 * @return
+	 */
 	public int top() {
 		if (isEmpty())
 			return EMPTY_STACK;
 		return last.getValue();
 	}
 
+	/**
+	 * Usuwa ostatni element z listy
+	 * @return wartosc usunietego elementu
+	 */
 	public int pop() {
 		if (isEmpty())
 			return EMPTY_STACK;
@@ -39,6 +62,12 @@ public class IntLinkedList {
 		return ret;
 	}
 
+	/**
+	 * Reprezentuje element na liscie
+	 * @see IntLinkedList
+	 * @author Monika
+	 *
+	 */
 	private class Node {
 
 		private final int value;
