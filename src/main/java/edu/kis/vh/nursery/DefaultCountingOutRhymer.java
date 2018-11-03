@@ -5,7 +5,7 @@ public class DefaultCountingOutRhymer {
 	private int[] numbers = new int[12];
 
 //	Dzialanie kombinacji klawiszy alt + -> oraz alt + <-
-//	Kursor zostaje przestawiony w miejsce, w którym ostatnio stanął kursor po kliknieciu mysza
+//	Kursor zostaje przestawiony w miejsce, w którym ostatnio nastapila edycja.
 
 	public int total = -1;
 	public void countIn(int in) {
