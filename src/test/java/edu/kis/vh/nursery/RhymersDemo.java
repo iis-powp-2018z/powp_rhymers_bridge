@@ -9,6 +9,10 @@ class RhymersDemo {
     public static void main(final String[] args) {
         final RhymersFactory factory = new DefaultRhymersFactory();
 
+        testRhymers(factory);
+    }
+
+    public static void testRhymers(final RhymersFactory factory) {
         final DefaultCountingOutRhymer[] rhymers = {factory.getStandardRhymer(), factory.getFalseRhymer(),
                 factory.getFIFORhymer(), factory.getHanoiRhymer()};
 
