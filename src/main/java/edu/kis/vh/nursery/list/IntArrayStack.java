@@ -8,7 +8,7 @@ public class IntArrayStack {
 
 	private int[] numbers = new int[STACK_CAPACITY];
 
-	public int total = EMPTY_STACK;
+	private int total = EMPTY_STACK;
 
 	public void countIn(int in) {
 		if (!isFull())

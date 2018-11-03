@@ -12,7 +12,7 @@ public class DefaultCountingOutRhymer {
 	// Kursor zostaje przestawiony w miejsce, w którym ostatnio nastapila
 	// edycja.
 
-	public int total = EMPTY_STACK;
+	private int total = EMPTY_STACK;
 
 	public void countIn(int in) {
 		if (!isFull())
