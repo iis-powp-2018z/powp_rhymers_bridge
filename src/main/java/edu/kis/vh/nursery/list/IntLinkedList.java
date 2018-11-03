@@ -11,6 +11,8 @@ public class IntLinkedList {
 	private static final int EMPTY_STACK = -1;
 
 	private Node last;
+
+	//TODO: Czy to na pewno jest potrzebne?
 	private int i;
 
 	/**
@@ -35,6 +37,7 @@ public class IntLinkedList {
 		return last == null;
 	}
 
+	//TODO: Czy to na pewno jest potrzebne? Zawsze zwraca false
 	public boolean isFull() {
 		return false;
 	}
