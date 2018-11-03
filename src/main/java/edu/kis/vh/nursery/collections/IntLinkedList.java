@@ -10,7 +10,7 @@ public class IntLinkedList implements StackImplementation {
 	 */
 	@Override
 	public boolean isFull() {
-		return false; // TODO: needs remove
+		return false; 
 	}
 	
 
@@ -22,9 +22,9 @@ public class IntLinkedList implements StackImplementation {
 		if (last == null)
 			last = new Node(i);
 		else {
-			last.next = new Node(i);
-			last.next.prev = last;
-			last = last.next;
+			last.setNext(new Node(i));
+			last.getNext().setPrev(last);
+			last = last.getNext();
 		}
 		listSize++;
 	}
@@ -43,8 +43,8 @@ public class IntLinkedList implements StackImplementation {
 	@Override
 	public int top() {
 		if (isEmpty())
-			return -1;
-		return last.value;
+			return EMPTY_STACK;
+		return last.getValue();
 	}
 
 	/* (non-Javadoc)
@@ -54,10 +54,10 @@ public class IntLinkedList implements StackImplementation {
 	public int pop() {
 		
 		if (isEmpty())
-			return -1;
+			return EMPTY_STACK;
 		
-		int ret = last.value;
-		last = last.prev;
+		int ret = last.getValue();
+		last = last.getPrev();
 		
 		listSize--;
 		return ret;
