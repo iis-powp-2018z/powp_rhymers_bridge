@@ -3,6 +3,7 @@ package edu.kis.vh.nursery;
 public class Adapter implements DefaultInterface {
 	
 	protected static final int EMPTY = -1;
+	protected static final int NEW_EMPTY = 0;
 	protected static final int FULL = 11;
 	protected static final int CAPITALITY = 12;
 	

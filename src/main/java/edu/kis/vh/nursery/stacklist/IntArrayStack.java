@@ -45,7 +45,7 @@ public class IntArrayStack extends Adapter {
 
 	protected int peekaboo() {
 		if (callCheck())
-			return EMPTY;
+			return NEW_EMPTY;
 		return NUMBERS[total];
 	}
 
@@ -55,7 +55,7 @@ public class IntArrayStack extends Adapter {
 	@Override
 	public int countOut() {
 		if (callCheck())
-			return EMPTY;
+			return NEW_EMPTY;
 		return NUMBERS[total--];
 	}
 
