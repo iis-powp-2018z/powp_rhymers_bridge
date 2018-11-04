@@ -5,17 +5,29 @@ import org.junit.Test;
 
 public class RhymersJUnitTest {
 
-    public static final int TEST_VALUE = 4;
-    public static final int STACK_CAPACITY = 12;
-    public static final int EMPTY_STACK_VALUE = -1;
+    private static final int TEST_VALUE = 4;
+    private static final int STACK_CAPACITY = 12;
+    private static final int EMPTY_STACK_VALUE = -1;
+
+    public static int getTestValue() {
+        return TEST_VALUE;
+    }
+
+    public static int getStackCapacity() {
+        return STACK_CAPACITY;
+    }
+
+    public static int getEmptyStackValue() {
+        return EMPTY_STACK_VALUE;
+    }
 
     @Test
     protected void testCountIn() {
         DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
-        rhymer.countIn(TEST_VALUE);
+        rhymer.countIn(getTestValue());
 
         int result = rhymer.peekaboo();
-        Assert.assertEquals(TEST_VALUE, result);
+        Assert.assertEquals(getTestValue(), result);
     }
 
     @Test
@@ -33,7 +45,7 @@ public class RhymersJUnitTest {
     @Test
     protected void testIsFull() {
         DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
-        for (int i = 0; i < STACK_CAPACITY; i++) {
+        for (int i = 0; i < getStackCapacity(); i++) {
             boolean result = rhymer.isFull();
             Assert.assertEquals(false, result);
             rhymer.countIn(888);
@@ -48,14 +60,14 @@ public class RhymersJUnitTest {
         DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
 
         int result = rhymer.peekaboo();
-        Assert.assertEquals(EMPTY_STACK_VALUE, result);
+        Assert.assertEquals(getEmptyStackValue(), result);
 
-        rhymer.countIn(TEST_VALUE);
+        rhymer.countIn(getTestValue());
 
         result = rhymer.peekaboo();
-        Assert.assertEquals(TEST_VALUE, result);
+        Assert.assertEquals(getTestValue(), result);
         result = rhymer.peekaboo();
-        Assert.assertEquals(TEST_VALUE, result);
+        Assert.assertEquals(getTestValue(), result);
     }
 
     @Test
@@ -63,12 +75,12 @@ public class RhymersJUnitTest {
         DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
 
         int result = rhymer.countOut();
-        Assert.assertEquals(EMPTY_STACK_VALUE, result);
-        rhymer.countIn(TEST_VALUE);
+        Assert.assertEquals(getEmptyStackValue(), result);
+        rhymer.countIn(getTestValue());
         result = rhymer.countOut();
-        Assert.assertEquals(TEST_VALUE, result);
+        Assert.assertEquals(getTestValue(), result);
         result = rhymer.countOut();
-        Assert.assertEquals(EMPTY_STACK_VALUE, result);
+        Assert.assertEquals(getEmptyStackValue(), result);
     }
 //kombinacja alt + strzalka pozwala nam sie przelaczaj pomiedzy kartami klas
 }
