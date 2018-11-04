@@ -33,7 +33,7 @@ public class IntArrayStack implements IntStack {
 
     @Override
     public boolean isEmpty() {
-        return total == EMPTY_STACK_ERROR;
+        return total < EMPTY_STACK_ERROR;
     }
 
     @Override
