@@ -17,7 +17,7 @@ public class RhymersJUnitTest {
 
 	@Test
 	public void testCallCheck() {
-		IntArrayStack rhymer = new IntArrayStack();
+		DefaultInterface rhymer = new IntArrayStack();
 		boolean result = rhymer.callCheck();
 		Assert.assertEquals(true, result);
 
@@ -29,7 +29,7 @@ public class RhymersJUnitTest {
 
 	@Test
 	public void testIsFull() {
-		IntArrayStack rhymer = new IntArrayStack();
+		DefaultInterface rhymer = new IntArrayStack();
 		final int STACK_CAPACITY = 12;
 		for (int i = 0; i < STACK_CAPACITY; i++) {
 			boolean result = rhymer.isFull();
@@ -60,7 +60,7 @@ public class RhymersJUnitTest {
 
 	@Test
 	public void testCountOut() {
-		IntArrayStack rhymer = new IntArrayStack();
+		DefaultInterface rhymer = new IntArrayStack();
 		final int EMPTY_STACK_VALUE = -1;
 
 		int result = rhymer.countOut();
