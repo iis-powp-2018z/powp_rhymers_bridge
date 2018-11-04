@@ -16,4 +16,3 @@ public class HanoiRhymer extends DefaultCountingOutRhymer {
             super.countIn(in);
     }
 }
-// alt + '<-' / '->' służy do nawigacji po edytowanych miejscach (intelij)
