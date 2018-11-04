@@ -1,4 +1,4 @@
-package edu.kis.vh.nursery;
+package edu.kis.vh.nursery.intstack;
 
 public class IntArrayStack implements IntStack {
     private static final int STACK_CAPACITY = 12;
