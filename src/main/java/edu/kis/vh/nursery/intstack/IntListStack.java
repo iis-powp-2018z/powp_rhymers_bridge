@@ -1,6 +1,6 @@
 package edu.kis.vh.nursery.intstack;
 
-public class IntLinkedList implements IntStack{
+public class IntListStack implements IntStack{
     private Node last;
 
     @Override
