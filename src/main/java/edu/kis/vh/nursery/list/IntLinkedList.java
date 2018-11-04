@@ -37,4 +37,14 @@ public class IntLinkedList {
 		return ret;
 	}
 
+	private class Node {
+
+        protected int value;
+        protected Node prev, next;
+
+        protected Node(final int i) {
+            value = i;
+        }
+
+    }
 }
