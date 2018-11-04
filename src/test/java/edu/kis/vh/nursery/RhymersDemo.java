@@ -5,7 +5,6 @@ import edu.kis.vh.nursery.factory.RhymersFactory;
 
 class RhymersDemo {
 
-
     public static void main(String[] args) {
         DefaultCountingOutRhymer[] rhymers = testRhymers(new DefaultRhymersFactory());
 
