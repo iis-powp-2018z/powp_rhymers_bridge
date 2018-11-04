@@ -8,7 +8,7 @@ import edu.kis.vh.nursery.DefaultCountingOutRhymer;
 		
 		public DefaultCountingOutRhymer GetFalseRhymer();
 		
-		public DefaultCountingOutRhymer GetFIFORhymer();
+//		public DefaultCountingOutRhymer GetFIFORhymer();
 		
 		public DefaultCountingOutRhymer GetHanoiRhymer();
 		
