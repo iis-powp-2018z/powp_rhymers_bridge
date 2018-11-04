@@ -1,8 +1,6 @@
 package edu.kis.vh.nursery.intstack;
 
 public class IntLinkedList implements IntStack{
-    private static final int EMPTY_VALUE = -1;
-
     private Node last;
 
     @Override
@@ -19,7 +17,7 @@ public class IntLinkedList implements IntStack{
     @Override
     public int pop() {
         if (isEmpty()) {
-            return EMPTY_VALUE;
+            return EMPTY_STACK_ERROR;
         }
         final int ret = last.getValue();
         last = last.getPrev();
@@ -39,7 +37,7 @@ public class IntLinkedList implements IntStack{
     @Override
     public int peek() {
         if (isEmpty()) {
-            return EMPTY_VALUE;
+            return EMPTY_STACK_ERROR;
         }
         return last.getValue();
     }
