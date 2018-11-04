@@ -3,17 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="fd8debe0-3807-4f9f-ad77-2a4866f996c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/kis/vh/nursery/RhymersJUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/kis/vh/nursery/RhymersJUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/kis/vh/nursery/FIFORhymer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/kis/vh/nursery/FIFORhymer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/kis/vh/nursery/HanoiRhymer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/kis/vh/nursery/HanoiRhymer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/kis/vh/nursery/defaultCountingOutRhymer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/kis/vh/nursery/defaultCountingOutRhymer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/kis/vh/nursery/factory/DefaultRhymersFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/kis/vh/nursery/factory/DefaultRhymersFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/kis/vh/nursery/factory/Rhymersfactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/kis/vh/nursery/factory/Rhymersfactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/kis/vh/nursery/list/IntLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/kis/vh/nursery/list/IntLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/kis/vh/nursery/list/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/kis/vh/nursery/list/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/kis/vh/nursery/RhymersDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/edu/kis/vh/nursery/RhymersDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/kis/vh/nursery/RhymersJUnitTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/edu/kis/vh/nursery/RhymersJUnitTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/kis/vh/nursery/list/IntLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/kis/vh/nursery/list/IntLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/kis/vh/nursery/list/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/kis/vh/nursery/list/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/kis/vh/nursery/list/IntLinkedList.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="../powp_plotter_project/.idea/" />
@@ -53,14 +45,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="2" />
-          <entry key="gitignore" value="48" />
-          <entry key="java" value="510" />
+          <entry key="gitignore" value="52" />
+          <entry key="java" value="734" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="510" />
-          <entry key="PLAIN_TEXT" value="50" />
+          <entry key="JAVA" value="734" />
+          <entry key="PLAIN_TEXT" value="54" />
         </counts>
       </usages-collector>
     </session>
@@ -82,26 +74,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/kis/vh/nursery/DefaultCountingOutRhymer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+            <state relative-caret-position="262">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/kis/vh/nursery/list/IntLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+            <state relative-caret-position="119">
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
               <folding>
-                <element signature="e#821#822#0" expanded="true" />
-                <element signature="e#848#849#0" expanded="true" />
-                <element signature="e#886#887#0" expanded="true" />
-                <element signature="e#918#919#0" expanded="true" />
-                <element signature="e#943#944#0" expanded="true" />
-                <element signature="e#967#968#0" expanded="true" />
-                <element signature="e#998#999#0" expanded="true" />
-                <element signature="e#1024#1025#0" expanded="true" />
+                <element signature="e#715#716#0" expanded="true" />
+                <element signature="e#742#743#0" expanded="true" />
+                <element signature="e#783#784#0" expanded="true" />
+                <element signature="e#815#816#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,8 +98,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/kis/vh/nursery/list/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="-6">
+              <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+              <folding>
+                <element signature="e#204#205#0" expanded="true" />
+                <element signature="e#232#233#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -158,11 +150,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -170,8 +162,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/kis/vh/nursery/factory/DefaultRhymersFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            <state relative-caret-position="187">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -190,16 +182,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/edu/kis/vh/nursery/defaultCountingOutRhymer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/kis/vh/nursery/list/Node.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/kis/vh/nursery/factory/DefaultRhymersFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/kis/vh/nursery/factory/Rhymersfactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/kis/vh/nursery/RhymersDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/kis/vh/nursery/HanoiRhymer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/kis/vh/nursery/list/IntLinkedList.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/kis/vh/nursery/DefaultCountingOutRhymer.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/kis/vh/nursery/FIFORhymer.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/kis/vh/nursery/RhymersJUnitTest.java" />
         <option value="$PROJECT_DIR$/src/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/kis/vh/nursery/list/Node.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/kis/vh/nursery/list/IntLinkedList.java" />
       </list>
     </option>
   </component>
@@ -304,7 +296,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541340644505" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541342544870" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../powp_plotter_project/.idea" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
   </component>
@@ -375,7 +367,7 @@
       <workItem from="1541065431353" duration="592000" />
       <workItem from="1541105484824" duration="153000" />
       <workItem from="1541333342036" duration="3286000" />
-      <workItem from="1541338426618" duration="2173000" />
+      <workItem from="1541338426618" duration="4113000" />
     </task>
     <servers />
   </component>
@@ -400,11 +392,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9370000" />
+    <option name="totallyTimeSpent" value="11310000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.2655068" />
       <window_info id="Structure" order="1" sideWeight="0.5008183" side_tool="true" weight="0.24659607" />
@@ -414,20 +405,20 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.5008183" side_tool="true" weight="0.24659607" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32569557" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32569557" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24962178" />
+      <window_info active="true" anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.24962178" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
@@ -447,44 +438,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/kis/vh/nursery/factory/DefaultRhymersFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/kis/vh/nursery/factory/RhymersFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/kis/vh/nursery/list/IntLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-          <folding>
-            <element signature="e#821#822#0" expanded="true" />
-            <element signature="e#848#849#0" expanded="true" />
-            <element signature="e#886#887#0" expanded="true" />
-            <element signature="e#918#919#0" expanded="true" />
-            <element signature="e#943#944#0" expanded="true" />
-            <element signature="e#967#968#0" expanded="true" />
-            <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1024#1025#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/kis/vh/nursery/list/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -515,17 +468,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/kis/vh/nursery/DefaultCountingOutRhymer.java">
+    <entry file="file://$PROJECT_DIR$/src/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/kis/vh/nursery/DefaultCountingOutRhymer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+        <state relative-caret-position="262">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/kis/vh/nursery/factory/DefaultRhymersFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/kis/vh/nursery/factory/RhymersFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/kis/vh/nursery/list/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6">
+          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding>
+            <element signature="e#204#205#0" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/kis/vh/nursery/list/IntLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#783#784#0" expanded="true" />
+            <element signature="e#815#816#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

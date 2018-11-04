@@ -6,31 +6,31 @@ public class Node {
     private Node prev;
     private Node next;
 
-    public Node(int i) {
+    protected Node(int i) {
         setValue(i);
     }
 
-    public int getValue() {
+    protected int getValue() {
         return value;
     }
 
-    public void setValue(int value) {
+    private void setValue(int value) {
         this.value = value;
     }
 
-    public Node getPrev() {
+    protected Node getPrev() {
         return prev;
     }
 
-    public void setPrev(Node prev) {
+    protected void setPrev(Node prev) {
         this.prev = prev;
     }
 
-    public Node getNext() {
+    protected Node getNext() {
         return next;
     }
 
-    public void setNext(Node next) {
+    protected void setNext(Node next) {
         this.next = next;
     }
 }

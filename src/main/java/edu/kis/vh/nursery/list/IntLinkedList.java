@@ -37,11 +37,11 @@ public class IntLinkedList {
         return ret;
     }
 
-    public Node getLast() {
+    protected Node getLast() {
         return last;
     }
 
-    public void setLast(Node last) {
+    protected void setLast(Node last) {
         this.last = last;
     }
 
@@ -49,7 +49,4 @@ public class IntLinkedList {
         return i;
     }
 
-    public void setI(int i) {
-        this.i = i;
-    }
 }
