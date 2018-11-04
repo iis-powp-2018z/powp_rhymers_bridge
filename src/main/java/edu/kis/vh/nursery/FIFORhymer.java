@@ -4,7 +4,7 @@ import edu.kis.vh.nursery.intstack.IntStack;
 
 public class FIFORhymer extends DefaultCountingOutRhymer {
 
-    private final DefaultCountingOutRhymer temp = new DefaultCountingOutRhymer();
+    private final DefaultCountingOutRhymer temp = new HanoiRhymer();
 
     public FIFORhymer() {
     }
