@@ -5,6 +5,11 @@ import edu.kis.vh.nursery.Adapter;
 public class IntArrayStack extends Adapter {
 	
 
+	public IntArrayStack() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	private int[] NUMBERS = new int[CAPITALITY];
 
 	private int total = EMPTY;

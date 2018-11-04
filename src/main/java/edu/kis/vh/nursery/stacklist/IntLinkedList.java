@@ -4,6 +4,11 @@ import edu.kis.vh.nursery.Adapter;
 
 public class IntLinkedList extends Adapter {
 
+	public IntLinkedList() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	private Node last;
 	private int i;
 
