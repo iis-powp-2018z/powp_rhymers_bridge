@@ -21,7 +21,5 @@ public interface DefaultInterface {
 	int pop();
 	
 	int getI();
-	
-	
 
 }

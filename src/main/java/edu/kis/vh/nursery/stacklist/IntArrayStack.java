@@ -1,4 +1,6 @@
-package edu.kis.vh.nursery;
+package edu.kis.vh.nursery.stacklist;
+
+import edu.kis.vh.nursery.Adapter;
 
 public class IntArrayStack extends Adapter {
 	
