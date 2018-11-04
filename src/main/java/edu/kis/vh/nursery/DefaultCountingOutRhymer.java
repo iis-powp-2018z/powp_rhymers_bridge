@@ -22,7 +22,7 @@ public class DefaultCountingOutRhymer {
 		return total == TOTAL_START;
 	}
 
-	protected boolean isFull() {
+	public boolean isFull() {
 		return total == FULL_STACK;
 	}
 
@@ -32,9 +32,9 @@ public class DefaultCountingOutRhymer {
 		return numbers[total];
 	}
 
-	protected int countOut() {
+	public int countOut() {
 		if (callCheck())
-			return TOTAL_START;
+			return -1;
 		return numbers[total--];
 	}
 

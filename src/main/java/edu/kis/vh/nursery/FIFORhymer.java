@@ -17,8 +17,8 @@ public class FIFORhymer extends DefaultCountingOutRhymer {
 	 * @see edu.kis.vh.nursery.DefaultCountingOutRhymer#countOut()
 	 * zastąpienie z nadklasy metody countOut
 	 */
-	@Override
-	protected int countOut() {
+	
+	public int countOut() {
 		while (!callCheck())
 			temp.countIn(super.countOut());
 
