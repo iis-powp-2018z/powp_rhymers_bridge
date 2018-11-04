@@ -4,13 +4,10 @@ import edu.kis.vh.nursery.Adapter;
 
 public class IntArrayStack extends Adapter {
 	
-	private static final int empty_stack = -1;
-	private static final int full_stack = 11;
-	private static final int stack_capacity = 12;
 
-	private int[] NUMBERS = new int[stack_capacity];
+	private int[] NUMBERS = new int[CAPITALITY];
 
-	private int total = empty_stack;
+	private int total = EMPTY;
 
 	/* (non-Javadoc)
 	 * @see edu.kis.vh.nursery.DefaultInterface#getTotal()
@@ -35,7 +32,7 @@ public class IntArrayStack extends Adapter {
 	 */
 	@Override
 	public boolean callCheck() {
-		return total == empty_stack;
+		return total == EMPTY;
 	}
 
 	/* (non-Javadoc)
@@ -43,12 +40,12 @@ public class IntArrayStack extends Adapter {
 	 */
 	@Override
 	public boolean isFull() {
-		return total == full_stack;
+		return total == FULL;
 	}
 
 	protected int peekaboo() {
 		if (callCheck())
-			return empty_stack;
+			return EMPTY;
 		return NUMBERS[total];
 	}
 
@@ -58,7 +55,7 @@ public class IntArrayStack extends Adapter {
 	@Override
 	public int countOut() {
 		if (callCheck())
-			return empty_stack;
+			return EMPTY;
 		return NUMBERS[total--];
 	}
 

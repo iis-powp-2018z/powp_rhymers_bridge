@@ -31,14 +31,14 @@ public class IntLinkedList extends Adapter {
 	@Override
 	public int top() {
 		if (isEmpty())
-			return -1;
+			return EMPTY;
 		return last.value;
 	}
 	
 	@Override
 	public int pop() {
 		if (isEmpty())
-			return -1;
+			return EMPTY;
 		int ret = last.value;
 		last = last.prev;
 		return ret;

@@ -2,6 +2,10 @@ package edu.kis.vh.nursery;
 
 public class Adapter implements DefaultInterface {
 	
+	protected static final int EMPTY = -1;
+	protected static final int FULL = 11;
+	protected static final int CAPITALITY = 12;
+	
 	public int getTotal() {return 0;}
 	public void countIn(int in) {}
 	public boolean callCheck() {return false;}
