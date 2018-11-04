@@ -5,7 +5,7 @@ public class Adapter implements DefaultInterface {
 	protected static final int EMPTY = -1;
 	protected static final int NEW_EMPTY = 0;
 	protected static final int FULL = 11;
-	protected static final int CAPITALITY = 12;
+	protected static final int CAPACITY = 12;
 	
 	public int getTotal() {return 0;}
 	public void countIn(int in) {}

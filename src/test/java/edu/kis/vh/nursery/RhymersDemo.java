@@ -14,8 +14,8 @@ class RhymersDemo {
 	}
 
 	private static void testRhymers(RhymersFactory factory) {
-		DefaultInterface[] rhymers = { factory.GetStandardRhymer(), factory.GetFalseRhymer(),
-				factory.GetFIFORhymer(), factory.GetHanoiRhymer()};
+		DefaultInterface[] rhymers = { (DefaultInterface) factory.GetStandardRhymer(), (DefaultInterface) factory.GetFalseRhymer(),
+				(DefaultInterface) factory.GetHanoiRhymer()};
 		
 		for (int i = 1; i < 15; i++)
 			for (int j = 0; j < 3; j++)

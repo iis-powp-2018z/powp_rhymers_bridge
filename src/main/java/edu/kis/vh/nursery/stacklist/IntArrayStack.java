@@ -10,7 +10,7 @@ public class IntArrayStack extends Adapter {
 		// TODO Auto-generated constructor stub
 	}
 
-	private int[] NUMBERS = new int[CAPITALITY];
+	private int[] NUMBERS = new int[CAPACITY];
 
 	private int total = EMPTY;
 
