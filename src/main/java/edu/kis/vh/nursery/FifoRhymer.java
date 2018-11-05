@@ -18,19 +18,19 @@ public class FifoRhymer extends DefaultCountingOutRhymer {
 		// TODO Auto-generated constructor stub
 	}
 
-	public DefaultCountingOutRhymer temp = new DefaultCountingOutRhymer();
+	public IntStack temp = new IntStack();
 
 	@Override
 	public int countOut() {
 		while (!callCheck())
 
-			temp.countIn(super.countOut());
+			temp.push(super.countOut());
 
-		int ret = temp.countOut();
+		final int ret = temp.pop();
 
-		while (!temp.callCheck())
+		while (!temp.isEmpty())
 
-			countIn(temp.countOut());
+			countIn(temp.pop());
 
 		return ret;
 	}
