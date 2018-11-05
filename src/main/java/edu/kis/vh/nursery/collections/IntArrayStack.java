@@ -1,5 +1,5 @@
 
-package edu.kis.vh.nursery.list;
+package edu.kis.vh.nursery.collections;
 
 public class IntArrayStack  {
     public static final int DEFAULT_STACK_CAPACITY = 12;
