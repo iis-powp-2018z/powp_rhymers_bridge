@@ -1,7 +1,7 @@
 
 package edu.kis.vh.nursery.list;
 
-public class IntArrayStack {
+public class IntArrayStack  {
     public static final int DEFAULT_STACK_CAPACITY = 12;
     public static final int DEFAULT_MIN = -1;
     private int[] NUMBERS = new int[DEFAULT_STACK_CAPACITY];
@@ -24,7 +24,6 @@ public class IntArrayStack {
     protected boolean isFull() {
         return total == DEFAULT_STACK_CAPACITY - 1;
     }
-
     public int peekaboo() {
         if (callCheck())
             return -1;
@@ -36,5 +35,4 @@ public class IntArrayStack {
             return -1;
         return NUMBERS[total--];
     }
-
 }
