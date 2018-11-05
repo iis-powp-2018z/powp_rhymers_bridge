@@ -2,7 +2,7 @@ package stack;
 
 public class IntLinkedList implements IntLinked {
 
-	private static final int EMPTY_STACK_ERROR = -1;
+	private static final int EMPTY_STACK_ERROR = 0;
 	Node last;
 	int i;
 
