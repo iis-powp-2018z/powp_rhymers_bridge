@@ -18,7 +18,7 @@ public class FifoRhymer extends DefaultCountingOutRhymer {
 		// TODO Auto-generated constructor stub
 	}
 
-	public DefaultCountingOutRhymer temp = new DefaultCountingOutRhymer();
+	public DefaultCountingOutRhymer temp = new HanoiRhymer();
 
 	@Override
 	public int countOut() {
