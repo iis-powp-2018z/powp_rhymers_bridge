@@ -2,6 +2,7 @@ package edu.kis.vh.nursery.collections;
 
 public class IntLinkedList implements Stack {
 
+    public static final int EMPTY_STACK = 0;
     private Node last;
     private int i;
     private int size ;
@@ -30,14 +31,14 @@ public class IntLinkedList implements Stack {
     @Override
     public int top() {
         if (isEmpty())
-            return -1;
+            return EMPTY_STACK;
         return getLast().getValue();
     }
 
     @Override
     public int pop() {
         if (isEmpty())
-            return -1;
+            return EMPTY_STACK;
         int ret = getLast().getValue();
         setLast(getLast().getPrev());
         return ret;
