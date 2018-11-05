@@ -2,9 +2,9 @@
 package edu.kis.vh.nursery.collections;
 
 public class IntArrayStack implements Stack {
-    public static final int DEFAULT_STACK_CAPACITY = 12;
-    public static final int DEFAULT_MIN = -1;
-    private int[] numbers = new int[DEFAULT_STACK_CAPACITY];
+
+    public static final int DEFAULT_MIN = 0;
+    private int[] numbers = new int[Stack.DEFAULT_STACK_CAPACITY];
 
     public int getTotal() {
         return total;
@@ -24,7 +24,7 @@ public class IntArrayStack implements Stack {
     }
 
     public boolean isFull() {
-        return total == DEFAULT_STACK_CAPACITY - 1;
+        return total == Stack.DEFAULT_STACK_CAPACITY ;
     }
     public int peekaboo() {
         if (callCheck())
@@ -45,7 +45,7 @@ public class IntArrayStack implements Stack {
     }
     @Override
     public boolean isEmpty() {
-        return total ==Stack.EMPTY_STACK;
+        return total == Stack.EMPTY_STACK;
     }
     @Override
     public int pop() {

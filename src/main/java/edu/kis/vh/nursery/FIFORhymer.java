@@ -11,6 +11,10 @@ public class FIFORhymer extends DefaultCountingOutRhymer {
         super(list);
     }
 
+    public FIFORhymer() {
+
+    }
+
     @Override
     protected int countOut() {
         while (!callCheck())
@@ -25,6 +29,6 @@ public class FIFORhymer extends DefaultCountingOutRhymer {
 
         return ret;
     }
-//najlepszym wyborem jest IntArrayStack, poniewaz portrzebujemy ostatniej wartosci,
+//najlepszym wyborem jest IntArrayStack, poniewaz potrzebujemy ostatniej wartosci,
 
 }
