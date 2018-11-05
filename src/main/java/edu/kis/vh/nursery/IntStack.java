@@ -4,7 +4,7 @@ public class IntStack {
 
 	public void push(int countOut) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public int pop() {
