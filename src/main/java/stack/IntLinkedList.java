@@ -38,4 +38,9 @@ public class IntLinkedList implements IntLinked {
 		return ret;
 	}
 
+	public int getSize() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }
