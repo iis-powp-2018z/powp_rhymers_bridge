@@ -3,37 +3,33 @@ package edu.kis.vh.nursery;
 import stack.IntArrayStack;
 
 public class DefaultCountingOutRhymer {
-
-	IntArrayStack intArrayStack = new IntArrayStack();
-
-	public DefaultCountingOutRhymer(IntArrayStack intArrayStack) { 
-		super();
+	
+	private final IntArrayStack intArrayStack;
+	
+	public DefaultCountingOutRhymer(IntArrayStack intArrayStack) {
 		this.intArrayStack = intArrayStack;
 	}
-
+	
 	public DefaultCountingOutRhymer() {
-		super();
+		intArrayStack = new IntArrayStack();
 	}
-
-	public void countIn(int in) {
+	public int getTotal() {
+		return intArrayStack.getTotal();
+	}
+ 	public void countIn(int in) {
 		intArrayStack.countIn(in);
 	}
-
-	public boolean callCheck() {
+ 	boolean isFull() {
+ 	return intArrayStack.isFull();
+}
+	int peekaboo() {
+		return intArrayStack.peekaboo();
+	}
+ 	int countOut() {return intArrayStack.countOut();
+	}
+ 	boolean callCheck() {
 		return intArrayStack.callCheck();
 	}
 
-	public boolean isFull() {
-		return intArrayStack.isFull();
-	}
-
-	public int countOut() {
-		return intArrayStack.countOut();
-	}
-
-	public int peekaboo() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 } 
  

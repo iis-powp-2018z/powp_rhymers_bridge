@@ -34,7 +34,7 @@ public class IntArrayStack implements IntArray {
 		return total == FULL;
 	}
 
-	protected int peekaboo() {
+	public int peekaboo() {
 		if (callCheck())
 			return EMPTY_STACK_ERROR;
 		return NUMBERS[total];
