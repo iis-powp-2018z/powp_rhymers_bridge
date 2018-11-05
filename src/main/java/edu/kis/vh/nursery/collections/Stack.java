@@ -1,6 +1,8 @@
 package edu.kis.vh.nursery.collections;
 
 public interface Stack {
+
+    int EMPTY_STACK = 0;
     void push(int i);
 
     boolean isEmpty();
@@ -11,11 +13,6 @@ public interface Stack {
 
     int pop();
 
-    Node getLast();
-
-    void setLast(Node last);
-
-    int getI();
 
     int getTotal();
 }

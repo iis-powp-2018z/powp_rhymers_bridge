@@ -1,30 +1,30 @@
 package edu.kis.vh.nursery;
 
+import edu.kis.vh.nursery.collections.IntArrayStack;
+import edu.kis.vh.nursery.collections.Stack;
+
 public class FIFORhymer extends DefaultCountingOutRhymer {
 
-    private DefaultCountingOutRhymer temp = new DefaultCountingOutRhymer();
+    private Stack temp = new IntArrayStack();
 
-    public FIFORhymer(DefaultCountingOutRhymer temp) {
-        this.temp = temp;
+    public FIFORhymer(Stack list) {
+        super(list);
     }
 
     @Override
     protected int countOut() {
         while (!callCheck())
 
-            getTemp().countIn(super.countOut());
+            temp.push(super.countOut());
 
-        int ret = getTemp().countOut();
+        int ret = temp.pop();
 
-        while (!getTemp().callCheck())
+        while (!temp.isEmpty())
 
-            countIn(getTemp().countOut());
+            countIn(temp.pop());
 
         return ret;
     }
-
-    public DefaultCountingOutRhymer getTemp() {
-        return temp;
-    }
+//najlepszym wyborem jest IntArrayStack, poniewaz portrzebujemy ostatniej wartosci,
 
 }

@@ -44,17 +44,17 @@ public class IntLinkedList implements Stack {
         return ret;
     }
 
-    @Override
+
     public Node getLast() {
         return last;
     }
 
-    @Override
+
     public void setLast(Node last) {
         this.last = last;
     }
 
-    @Override
+
     public int getI() {
         return i;
     }
@@ -63,6 +63,7 @@ public class IntLinkedList implements Stack {
     {
         return size;
     }
+
 
 
 

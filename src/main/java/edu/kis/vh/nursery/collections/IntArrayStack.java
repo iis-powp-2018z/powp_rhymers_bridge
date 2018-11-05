@@ -1,11 +1,10 @@
 
 package edu.kis.vh.nursery.collections;
 
-public class IntArrayStack  {
+public class IntArrayStack implements Stack {
     public static final int DEFAULT_STACK_CAPACITY = 12;
     public static final int DEFAULT_MIN = -1;
-    public static final int EMPTY_STACK = 0;
-    private int[] NUMBERS = new int[DEFAULT_STACK_CAPACITY];
+    private int[] numbers = new int[DEFAULT_STACK_CAPACITY];
 
     public int getTotal() {
         return total;
@@ -13,27 +12,45 @@ public class IntArrayStack  {
 
     private int total = DEFAULT_MIN;
 
-    public void countIn(int in) {
+    @Override
+    public void push(int in) {
         if (!isFull())
-            NUMBERS[++total] = in;
+            numbers[total++] = in;
     }
+
 
     public boolean callCheck() {
-        return total == EMPTY_STACK;
+        return total == Stack.EMPTY_STACK;
     }
 
-    protected boolean isFull() {
+    public boolean isFull() {
         return total == DEFAULT_STACK_CAPACITY - 1;
     }
     public int peekaboo() {
         if (callCheck())
-            return EMPTY_STACK;
-        return NUMBERS[total];
+            return Stack.EMPTY_STACK;
+        return numbers[total];
     }
 
     public int countOut() {
         if (callCheck())
-            return EMPTY_STACK;
-        return NUMBERS[total--];
+            return Stack.EMPTY_STACK;
+        return numbers[total--];
+    }
+    @Override
+    public int top() {
+        if (isEmpty())
+            return Stack.EMPTY_STACK;
+        return numbers[total-1];
+    }
+    @Override
+    public boolean isEmpty() {
+        return total ==Stack.EMPTY_STACK;
+    }
+    @Override
+    public int pop() {
+        if (isEmpty())
+            return Stack.EMPTY_STACK;
+        return numbers[--total];
     }
 }
