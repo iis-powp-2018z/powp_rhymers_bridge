@@ -27,7 +27,7 @@ public class IntArrayStack {
 		return total == 11;
 	}
 
-	protected int peekaBoo() {
+	public int peekaBoo() {
 		if (callCheck())
 			return EMPTY_STACK_FAIL;
 		return NUMBERS[total];
