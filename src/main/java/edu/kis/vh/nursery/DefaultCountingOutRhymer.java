@@ -34,7 +34,6 @@ public class DefaultCountingOutRhymer {
 		if (callCheck())
 			return -1;
 		return intLinkList.top();
-
 	}
 	
 	public int countOut() {
@@ -43,47 +42,6 @@ public class DefaultCountingOutRhymer {
 		return intLinkList.pop();
 
 	}
-	/*
-	protected int peekaboo() {
 
-		if (callCheck())
-			return -1;
-
-		return intLinkList.
-
-	}
-	
-	*
-	public int getTotal() {
-		return intArrStk.getTotal();
-	}
-
-	//public void countIn(int in) {
-	//	intArrStk.countIn(in);
-	//}
-/*
-	public boolean callCheck() {
-		return intArrStk.callCheck();
-	}
-
-	public boolean isFull() {
-		return intArrStk.isFull();
-	}
-
-	public int countOut() {
-		return intArrStk.countOut();
-	}
-/*
-	public int peekaBoo() {
-		return intArrStk.peekaBoo();
-	}
-*/
-	public int getTestEncapsulateFilled() {
-		return intArrStk.getTestEncapsulateFilled();
-	}
-
-	public void setTestEncapsulateFilled(int testEncapsulateFilled) {
-		intArrStk.setTestEncapsulateFilled(testEncapsulateFilled);
-	}
 	
 }
