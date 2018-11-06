@@ -1,7 +1,7 @@
 package edu.kis.vh.nursery;
 import edu.kis.vh.nursery.list.IntLinkedList;
 
-public class DefaultCountingOutRhymer {
+public class DefaultCountingOutRhymer implements Generate {
 	
 	private IntLinkedList intLinkList =  new IntLinkedList();
 	public int total = -1;
