@@ -9,7 +9,7 @@ public class DefaultCountingOutRhymer {
 	
 	public DefaultCountingOutRhymer(IntLinkedList intLinkList) {
 		super();
-		this.intArrStk = intArrStk;
+		this.intLinkList = intLinkList;
 	}
 	
 	public DefaultCountingOutRhymer() {
@@ -42,6 +42,4 @@ public class DefaultCountingOutRhymer {
 		return intLinkList.pop();
 
 	}
-
-	
 }
