@@ -28,6 +28,19 @@ public class RhymersJUnitTest {
     }
 
     @Test
+    public void testGetTotal() {
+        final DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
+        final int numberOfInsertions = 4;
+        final int highestExistingIndex = numberOfInsertions - 1;
+
+        for (int i = 0; i < numberOfInsertions; i++) {
+            rhymer.countIn(testValue);
+        }
+
+        Assert.assertEquals(highestExistingIndex, rhymer.getTotal());
+    }
+
+    @Test
     public void testIsFull() {
         final DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
         final int STACK_CAPACITY = 12;
