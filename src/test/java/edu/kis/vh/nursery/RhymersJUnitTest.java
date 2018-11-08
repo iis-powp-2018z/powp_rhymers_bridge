@@ -2,7 +2,7 @@ package edu.kis.vh.nursery;
 import org.junit.Assert;
 import org.junit.Test;
 
-import edu.kis.vh.nursery.list.IntArrayStack;
+import storage.IntArrayStack;
 
 public class RhymersJUnitTest {
 

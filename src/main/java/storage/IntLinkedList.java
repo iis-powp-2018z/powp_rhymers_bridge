@@ -1,4 +1,4 @@
-package edu.kis.vh.nursery.list;
+package storage;
 
 public class IntLinkedList{
 

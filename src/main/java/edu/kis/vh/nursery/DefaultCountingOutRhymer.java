@@ -1,5 +1,5 @@
 package edu.kis.vh.nursery;
-import edu.kis.vh.nursery.list.IntLinkedList;
+import storage.IntLinkedList;
 
 public class DefaultCountingOutRhymer implements Generate {
 	
