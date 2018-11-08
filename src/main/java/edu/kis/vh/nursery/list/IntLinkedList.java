@@ -1,6 +1,6 @@
 package edu.kis.vh.nursery.list;
 
-public class IntLinkedList implements Generate {
+public class IntLinkedList{
 
 	Node last;
 	int i;

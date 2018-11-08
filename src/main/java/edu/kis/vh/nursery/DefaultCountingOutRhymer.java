@@ -1,11 +1,9 @@
 package edu.kis.vh.nursery;
 import edu.kis.vh.nursery.list.IntLinkedList;
 
-public class DefaultCountingOutRhymer implements Generate {
+public class DefaultCountingOutRhymer {
 	
 	private IntLinkedList intLinkList =  new IntLinkedList();
-	public int total = -1;
-	private IntArrayStack  intArrStk = new IntArrayStack();
 	
 	public DefaultCountingOutRhymer(IntLinkedList intLinkList) {
 		super();
