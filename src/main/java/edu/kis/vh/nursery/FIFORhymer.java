@@ -1,27 +1,33 @@
 package edu.kis.vh.nursery;
+import edu.kis.vh.nursery.stack.IntArrayStack;
 import edu.kis.vh.nursery.stack.IntLinkedList;
 
 public class FIFORhymer extends DefaultCountingOutRhymer {
-	public FIFORhymer() {
-	}
- 	public FIFORhymer(IntLinkedList list) {
-		super(list);
-	}
+    private final Stack temp = new IntArrayStack();
 
-	public DefaultCountingOutRhymer temp = new DefaultCountingOutRhymer();
 
-	@Override
-	public int countOut() {
-		while (!callCheck())
+    public FIFORhymer() {
+    }
 
-			temp.countIn(super.countOut());
+    public FIFORhymer(IntLinkedList list) {
+        super(list);
+    }
 
-		int ret = temp.countOut();
+    @Override
+    public int countOut() {
+        while (!callCheck())
 
-		while (!temp.callCheck())
-
-			countIn(temp.countOut());
-
-		return ret;
-	}
+        {
+            temp.push(super.countOut());
+        }
+        int ret = temp.pop();
+        while (!temp.isEmpty())
+        {
+            countIn(temp.pop());
+        }
+         return ret;
+    }
 }
+
+//// Uważam, że najlepszym wyborem będzie IntArrayStack , ponieważ potrzebujemy najnowszej wartości. 
+
