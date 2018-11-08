@@ -1,7 +1,7 @@
 package edu.kis.vh.nursery;
 import edu.kis.vh.nursery.list.IntLinkedList;
 
-public class DefaultCountingOutRhymer {
+public class DefaultCountingOutRhymer implements Generate {
 	
 	private IntLinkedList intLinkList =  new IntLinkedList();
 	
@@ -14,15 +14,27 @@ public class DefaultCountingOutRhymer {
 		
 	}
 
+	/* (non-Javadoc)
+	 * @see edu.kis.vh.nursery.Generate#countIn(int)
+	 */
+	@Override
 	public void countIn(int in) {
 		if (!intLinkList.isFull())
 			intLinkList.push(in);
 	}
 	
+	/* (non-Javadoc)
+	 * @see edu.kis.vh.nursery.Generate#callCheck()
+	 */
+	@Override
 	public boolean callCheck() {
 		return intLinkList.isEmpty();
 	}
 	
+	/* (non-Javadoc)
+	 * @see edu.kis.vh.nursery.Generate#isFull()
+	 */
+	@Override
 	public boolean isFull() {
 		return intLinkList.isFull();
 	}
@@ -34,6 +46,10 @@ public class DefaultCountingOutRhymer {
 		return intLinkList.top();
 	}
 	
+	/* (non-Javadoc)
+	 * @see edu.kis.vh.nursery.Generate#countOut()
+	 */
+	@Override
 	public int countOut() {
 		if (callCheck())
 			return -1;

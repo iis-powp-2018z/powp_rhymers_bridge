@@ -1,6 +1,6 @@
 package edu.kis.vh.nursery;
 
-public class IntArrayStack {
+public class IntArrayStack implements Generate {
 	
 	private int testEncapsulateFilled = 0;
 	
