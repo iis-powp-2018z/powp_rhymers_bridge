@@ -1,4 +1,6 @@
-package edu.kis.vh.nursery;
+package edu.kis.vh.nursery.list;
+
+import edu.kis.vh.nursery.Generate;
 
 public class IntArrayStack implements Generate {
 	
