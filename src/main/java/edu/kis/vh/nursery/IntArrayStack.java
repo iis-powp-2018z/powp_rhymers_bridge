@@ -1,5 +1,7 @@
 package edu.kis.vh.nursery;
-public class IntArrayStack implements Stack{
+import edu.kis.vh.nursery.Stack;
+public class IntArrayStack implements Stack {
+
     private static final int NUMBERS_CAPACITY = 12;
     private static final int ARRAY_EMPTY = -1;
     private int[] numbers = new int[NUMBERS_CAPACITY];
