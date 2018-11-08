@@ -2,7 +2,7 @@ package edu.kis.vh.nursery.list;
 
 public class IntLinkedList {
 
-    private static final int EMPTY_LIST_INDICATOR = -1;
+    public static final int EMPTY_LIST_INDICATOR = -1;
 	private Node last;
 
     public void push(final int value) {
