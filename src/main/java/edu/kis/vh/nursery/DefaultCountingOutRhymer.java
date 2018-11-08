@@ -17,6 +17,9 @@ public class DefaultCountingOutRhymer implements Generate {
 	/* (non-Javadoc)
 	 * @see edu.kis.vh.nursery.Generate#countIn(int)
 	 */
+	/* (non-Javadoc)
+	 * @see edu.kis.vh.nursery.Generate#countIn(int)
+	 */
 	@Override
 	public void countIn(int in) {
 		if (!intLinkList.isFull())
@@ -26,11 +29,17 @@ public class DefaultCountingOutRhymer implements Generate {
 	/* (non-Javadoc)
 	 * @see edu.kis.vh.nursery.Generate#callCheck()
 	 */
+	/* (non-Javadoc)
+	 * @see edu.kis.vh.nursery.Generate#callCheck()
+	 */
 	@Override
 	public boolean callCheck() {
 		return intLinkList.isEmpty();
 	}
 	
+	/* (non-Javadoc)
+	 * @see edu.kis.vh.nursery.Generate#isFull()
+	 */
 	/* (non-Javadoc)
 	 * @see edu.kis.vh.nursery.Generate#isFull()
 	 */
@@ -46,6 +55,9 @@ public class DefaultCountingOutRhymer implements Generate {
 		return intLinkList.top();
 	}
 	
+	/* (non-Javadoc)
+	 * @see edu.kis.vh.nursery.Generate#countOut()
+	 */
 	/* (non-Javadoc)
 	 * @see edu.kis.vh.nursery.Generate#countOut()
 	 */
