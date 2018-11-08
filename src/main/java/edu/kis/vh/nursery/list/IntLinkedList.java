@@ -7,7 +7,7 @@ public class IntLinkedList {
 
     public void push(final int value) {
         if (last == null)
-            last = new Node(value);
+            last = new Node(value);	// TODO I think braces (parentheses) need to be used here
         else {
             last.setNext(new Node(value));
             last.getNext().setPrev(last);
@@ -25,13 +25,13 @@ public class IntLinkedList {
 
     public int top() {
         if (isEmpty())
-            return EMPTY_LIST_INDICATOR;
+            return EMPTY_LIST_INDICATOR;	// TODO I think braces (parentheses) need to be used here
         return last.getValue();
     }
 
     public int pop() {
         if (isEmpty())
-            return EMPTY_LIST_INDICATOR;
+            return EMPTY_LIST_INDICATOR;	// TODO I think braces (parentheses) need to be used here
         final int nodeValue = last.getValue();
         last = last.getPrev();
         return nodeValue;

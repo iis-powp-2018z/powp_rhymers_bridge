@@ -15,7 +15,7 @@ public class DefaultCountingOutRhymer {
 
 	public void countIn(final int in) {
         if (!isFull())
-            numbers[++total] = in;
+            numbers[++total] = in;	// TODO I think braces (parentheses) need to be used here
     }
 
     public boolean callCheck() {
@@ -28,13 +28,13 @@ public class DefaultCountingOutRhymer {
 
     protected int peekaboo() {
         if (callCheck())
-            return EMPTY_RHYMER_INDICATOR;
+            return EMPTY_RHYMER_INDICATOR;	// TODO I think braces (parentheses) need to be used here
         return numbers[total];
     }
 
     public int countOut() {
         if (callCheck())
-            return EMPTY_RHYMER_INDICATOR;
+            return EMPTY_RHYMER_INDICATOR;	// TODO I think braces (parentheses) need to be used here
         return numbers[total--];
     }
 }

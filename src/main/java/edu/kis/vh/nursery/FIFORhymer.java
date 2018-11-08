@@ -8,13 +8,13 @@ public class FIFORhymer extends DefaultCountingOutRhymer {
     public int countOut() {
         while (!callCheck())
 
-            rhymer.countIn(super.countOut());
+            rhymer.countIn(super.countOut());	// TODO I think braces (parentheses) need to be used here
 
-        final int counter = rhymer.countOut();
+        final int counter = rhymer.countOut();	
 
         while (!rhymer.callCheck())
 
-            countIn(rhymer.countOut());
+            countIn(rhymer.countOut());	// TODO I think braces (parentheses) need to be used here
 
         return counter;
     }

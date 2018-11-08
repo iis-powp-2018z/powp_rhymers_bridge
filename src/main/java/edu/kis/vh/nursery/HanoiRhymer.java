@@ -11,8 +11,8 @@ public class HanoiRhymer extends DefaultCountingOutRhymer {
     @Override
     public void countIn(final int in) {
         if (!callCheck() && in > peekaboo())
-            totalRejected++;
+            totalRejected++;	// TODO I think braces (parentheses) need to be used here
         else
-            super.countIn(in);
+            super.countIn(in);	// TODO I think braces (parentheses) need to be used here
     }
 }

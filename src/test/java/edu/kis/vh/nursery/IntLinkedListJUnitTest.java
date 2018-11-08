@@ -46,6 +46,7 @@ public class IntLinkedListJUnitTest {
 	 */
 	@Test
     public void testIsFull() {
+		// TODO: isFull() needs to be tested here, once it get some implementation
 //        return false;
     }
 
