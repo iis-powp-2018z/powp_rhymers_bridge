@@ -10,6 +10,10 @@ public class DefaultCountingOutRhymerJUnitTest {
     public void testCountIn() {
         final DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
 
+        testCountInHelper(rhymer);
+    }
+
+    void testCountInHelper(DefaultCountingOutRhymer rhymer) {
         rhymer.countIn(testValue);
         Assert.assertEquals(testValue, rhymer.peekaboo());
     }
