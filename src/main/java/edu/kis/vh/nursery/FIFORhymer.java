@@ -14,10 +14,9 @@ public class FIFORhymer extends DefaultCountingOutRhymer {
 		super(intLinkList);
 		// TODO Auto-generated constructor stub
 	}
-
-	//Wybrany zosstał stos gdyż najlepeiej implementuje mechanizm FIFO
-	final private Generate temp = new IntArrayStack();
-	
+	// DefaultCountingOutRhymer wykorzystuje intLinkList a lista jest najlepszą struktura
+	// dla mechanizmu fifo
+	final private Generate temp = new DefaultCountingOutRhymer();
 
 	/* (non-Javadoc)
 	 * @see edu.kis.vh.nursery.DefaultCountingOutRhymer#countOut()
