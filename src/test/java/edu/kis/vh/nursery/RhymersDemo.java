@@ -10,7 +10,7 @@ class RhymersDemo {
 		Rhymersfactory factory = new DefaultRhymersFactory();
 		testRhymers(factory);
 	}
-
+	
 	private static void testRhymers(Rhymersfactory factory) {
 		Generate[] rhymers = { factory.GetStandardRhymer(), factory.GetFalseRhymer(),
 				factory.GetFIFORhymer(), factory.GetHanoiRhymer()};
