@@ -6,11 +6,9 @@ public class IntArrayStack implements Generate {
 	
 	private int testEncapsulateFilled = 0;
 	
-	private static final int EMPTY_STACK_FAIL = -1;
-
 	private int[] NUMBERS = new int[12];
 
-	private int total = EMPTY_STACK_FAIL; 
+	private int total = IntLinkedList.EMPTY_STACK_FAIL; 
 
 	public int getTotal() {
 		return total;
@@ -22,7 +20,7 @@ public class IntArrayStack implements Generate {
 	}
 
 	public boolean callCheck() {
-		return total == EMPTY_STACK_FAIL;
+		return total == IntLinkedList.EMPTY_STACK_FAIL;
 	}
 
 	public boolean isFull() {
@@ -31,13 +29,13 @@ public class IntArrayStack implements Generate {
 
 	public int peekaBoo() {
 		if (callCheck())
-			return EMPTY_STACK_FAIL;
+			return IntLinkedList.EMPTY_STACK_FAIL;
 		return NUMBERS[total];
 	}
 
 	public int countOut() {
 		if (callCheck())
-			return EMPTY_STACK_FAIL;
+			return IntLinkedList.EMPTY_STACK_FAIL;
 		return NUMBERS[total--];
 	}
 

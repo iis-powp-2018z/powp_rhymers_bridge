@@ -1,8 +1,23 @@
 package edu.kis.vh.nursery;
 
+import storage.IntLinkedList;
+import storage.IntArrayStack;
+
 public class FIFORhymer extends DefaultCountingOutRhymer {
 
-	final private Generate temp = new DefaultCountingOutRhymer();
+	public FIFORhymer() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public FIFORhymer(IntLinkedList intLinkList) {
+		super(intLinkList);
+		// TODO Auto-generated constructor stub
+	}
+
+	//Wybrany zosstał stos gdyż najlepeiej implementuje mechanizm FIFO
+	final private Generate temp = new IntArrayStack();
+	
 
 	/* (non-Javadoc)
 	 * @see edu.kis.vh.nursery.DefaultCountingOutRhymer#countOut()

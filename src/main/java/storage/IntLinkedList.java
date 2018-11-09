@@ -1,9 +1,10 @@
 package storage;
 
-public class IntLinkedList{
+public class IntLinkedList {
 
 	Node last;
 	int i;
+	static final int EMPTY_STACK_FAIL = 0;
 
 	public void push(int i) {
 		if (last == null)
