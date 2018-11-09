@@ -1,23 +1,24 @@
 package edu.kis.vh.nursery;
-
 import org.junit.Assert;
 import org.junit.Test;
+
+import storage.IntArrayStack;
 
 public class RhymersJUnitTest {
 
 	@Test
 	public void testCountIn() {
-		defaultCountingOutRhymer rhymer = new defaultCountingOutRhymer();
+		IntArrayStack rhymer = new IntArrayStack();
 		int testValue = 4;
 		rhymer.countIn(testValue);
 
-		int result = rhymer.peekaboo();
+		int result = rhymer.peekaBoo();
 		Assert.assertEquals(testValue, result);
 	}
 
 	@Test
 	public void testCallCheck() {
-		defaultCountingOutRhymer rhymer = new defaultCountingOutRhymer();
+		IntArrayStack rhymer = new IntArrayStack();
 		boolean result = rhymer.callCheck();
 		Assert.assertEquals(true, result);
 
@@ -29,7 +30,7 @@ public class RhymersJUnitTest {
 
 	@Test
 	public void testIsFull() {
-		defaultCountingOutRhymer rhymer = new defaultCountingOutRhymer();
+		IntArrayStack rhymer = new IntArrayStack();
 		final int STACK_CAPACITY = 12;
 		for (int i = 0; i < STACK_CAPACITY; i++) {
 			boolean result = rhymer.isFull();
@@ -43,24 +44,24 @@ public class RhymersJUnitTest {
 
 	@Test
 	public void testPeekaboo() {
-		defaultCountingOutRhymer rhymer = new defaultCountingOutRhymer();
+		IntArrayStack rhymer = new IntArrayStack();
 		final int EMPTY_STACK_VALUE = -1;
 
-		int result = rhymer.peekaboo();
+		int result = rhymer.peekaBoo();
 		Assert.assertEquals(EMPTY_STACK_VALUE, result);
 
 		int testValue = 4;
 		rhymer.countIn(testValue);
 
-		result = rhymer.peekaboo();
+		result = rhymer.peekaBoo();
 		Assert.assertEquals(testValue, result);
-		result = rhymer.peekaboo();
+		result = rhymer.peekaBoo();
 		Assert.assertEquals(testValue, result);
 	}
 
 	@Test
 	public void testCountOut() {
-		defaultCountingOutRhymer rhymer = new defaultCountingOutRhymer();
+		IntArrayStack rhymer = new IntArrayStack();
 		final int EMPTY_STACK_VALUE = -1;
 
 		int result = rhymer.countOut();
@@ -74,5 +75,4 @@ public class RhymersJUnitTest {
 		result = rhymer.countOut();
 		Assert.assertEquals(EMPTY_STACK_VALUE, result);
 	}
-
 }
