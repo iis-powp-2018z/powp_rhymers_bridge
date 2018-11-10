@@ -1,11 +1,21 @@
 package edu.kis.vh.nursery;
 
+import edu.kis.vh.nursery.collection.IntArrayStack;
+
 /**
  * @author Damian Pytkowski
  *
  */
 public class FIFORhymer extends DefaultCountingOutRhymer {
 
+	public FIFORhymer() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public FIFORhymer(IntArrayStack stack) {
+		super(stack);
+		// TODO Auto-generated constructor stub
+	}
 	private DefaultCountingOutRhymer temp = new DefaultCountingOutRhymer();
 	/* (non-Javadoc)
 	 * @see edu.kis.vh.nursery.DefaultCountingOutRhymer#countOut()
