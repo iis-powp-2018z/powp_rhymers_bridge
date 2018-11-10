@@ -3,7 +3,7 @@ package edu.kis.vh.nursery.collection;
 public class IntArrayStack {
 	private static final int STACK_CAPACITY = 12;
 
-	private static final int EMPTY_STACK_ERROR = -1;
+	private static final int EMPTY_STACK_ERROR = 0;
 
 	private int[] numbers = new int[STACK_CAPACITY];
 

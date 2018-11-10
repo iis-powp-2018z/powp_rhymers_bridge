@@ -2,7 +2,7 @@ package edu.kis.vh.nursery.collection;
 
 public class IntLinkedList {
 
-	private static final int VALIDVALUE = -1;
+	private static final int VALIDVALUE = 0;
 	private Node last;
 
 	public void push(int i) {
