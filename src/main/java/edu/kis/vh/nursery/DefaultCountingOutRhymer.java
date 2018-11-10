@@ -1,7 +1,7 @@
 package edu.kis.vh.nursery;
 
-import edu.kis.vh.nursery.list.IntArrayStack;
-import edu.kis.vh.nursery.list.IntLinkedList;
+import edu.kis.vh.nursery.collection.IntArrayStack;
+import edu.kis.vh.nursery.collection.IntLinkedList;
 
 public class DefaultCountingOutRhymer {
 	IntArrayStack stack = new IntArrayStack();
