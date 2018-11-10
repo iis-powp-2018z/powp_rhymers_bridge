@@ -16,7 +16,7 @@ public class FIFORhymer extends DefaultCountingOutRhymer {
 		super(stack);
 		// TODO Auto-generated constructor stub
 	}
-	private DefaultCountingOutRhymer temp = new DefaultCountingOutRhymer();
+	private IntArrayStack temp = new IntArrayStack();
 	/* (non-Javadoc)
 	 * @see edu.kis.vh.nursery.DefaultCountingOutRhymer#countOut()
 	 * method calls countIn until callCheck is true
