@@ -24,8 +24,9 @@ public class IntArrayStack implements Stack {
     }
 
     public boolean isFull() {
-        return total == Stack.DEFAULT_STACK_CAPACITY ;
+        return total == Stack.DEFAULT_STACK_CAPACITY;
     }
+
     public int peekaboo() {
         if (callCheck())
             return Stack.EMPTY_STACK;
@@ -37,16 +38,19 @@ public class IntArrayStack implements Stack {
             return Stack.EMPTY_STACK;
         return numbers[total--];
     }
+
     @Override
     public int top() {
         if (isEmpty())
             return Stack.EMPTY_STACK;
-        return numbers[total-1];
+        return numbers[total - 1];
     }
+
     @Override
     public boolean isEmpty() {
         return total == Stack.EMPTY_STACK;
     }
+
     @Override
     public int pop() {
         if (isEmpty())
