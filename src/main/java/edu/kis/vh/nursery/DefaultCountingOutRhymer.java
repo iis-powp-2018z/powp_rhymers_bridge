@@ -13,11 +13,32 @@ public class DefaultCountingOutRhymer 	{
 	}
 
 
-	public DefaultCountingOutRhymer(IntArrayStack arrayStack) {
-		super();
-		this.arrayStack = arrayStack;
+	public DefaultCountingOutRhymer() {
+		arrayStack = new IntArrayStack();
 	}
 
+
+	public void countIn(int in) {
+		arrayStack.countIn(in);
+	}
+
+	protected boolean callCheck() {
+		return arrayStack.callCheck();
+	}
+
+	public boolean isFull() {
+		return arrayStack.isFull();
+	}
+
+	protected int peekaboo() {
+		return arrayStack.peekaboo();
+	}
+
+	public int countOut() {
+		return arrayStack.countOut();
+	}
 	
-	//sadsa
+	
+	
+	
 }

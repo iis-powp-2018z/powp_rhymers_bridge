@@ -2,6 +2,7 @@ package edu.kis.vh.nursery;
 
 public class IntArrayStack {
 
+
 	private static final int EMPTY_STACK_SIZE = -1;
 
 	private static final int DEFAULT_STACK_CAPACITY = 12;
@@ -36,11 +37,3 @@ public class IntArrayStack {
 		return numbers[total--];
 	}
 }
-
-
-//////////
-//
-//TEST
-///
-///
-/////
