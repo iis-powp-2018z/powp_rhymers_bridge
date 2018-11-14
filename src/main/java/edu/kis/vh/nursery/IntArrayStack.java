@@ -36,3 +36,11 @@ public class IntArrayStack {
 		return numbers[total--];
 	}
 }
+
+
+//////////
+//
+//TEST
+///
+///
+/////
