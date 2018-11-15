@@ -12,7 +12,7 @@ public class FIFORhymer extends DefaultCountingOutRhymer {
 	/**
 	 * utowrzenie nwego obiektu DefaultCountingOutRhymer
 	 */
-	public DefaultCountingOutRhymer temp = new DefaultCountingOutRhymer();
+	public DefaultCountingOutRhymer temp = new HanoiRhymer();
 
 	
 	/* (non-Javadoc)
