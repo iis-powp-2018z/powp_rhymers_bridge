@@ -3,9 +3,10 @@ package edu.kis.vh.nursery.list;
 public class IntLinkedList {
 
 	private Node last;
-	//int i;
+	private int size;
 
-	protected void push(int i) {
+
+	public void push(int i) {
 		if (last == null)
 			last = new Node(i);
 		else {
@@ -15,26 +16,39 @@ public class IntLinkedList {
 		}
 	}
 
-	private boolean isEmpty() {
+	public boolean isEmpty() {
 		return last == null;
 	}
 
-	protected boolean isFull() {
+	public boolean isFull() {
 		return false;
 	}
 
-	protected int top() {
+	public int top() {
 		if (isEmpty())
 			return -1;
 		return last.getValue();
 	}
 
-	protected int pop() {
+	public int pop() {
 		if (isEmpty())
 			return -1;
 		int ret = last.getValue();
 		last = last.getPrev();
 		return ret;
 	}
+
+	public int getTotal() {
+		return size;
+		
+	}
+    public Node getLast() {
+        return last;
+    }
+    
+    public void setLast(Node last) {
+        this.last = last;
+    }
+
 
 }

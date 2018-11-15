@@ -22,7 +22,7 @@ public class IntArrayStack {
 	}
 
 	public boolean isFull() {
-		return total == 11;
+		return total == DEFAULT_STACK_CAPACITY;
 	}
 
 	protected int peekaboo() {
