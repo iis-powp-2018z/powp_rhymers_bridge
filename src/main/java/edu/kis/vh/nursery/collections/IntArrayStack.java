@@ -27,13 +27,13 @@ public class IntArrayStack  {
 
 	protected int peekaboo() {
 		if (callCheck())
-			return EMPTY_STACK_SIZE;
+			return 0;
 		return numbers[total];
 	}
 
 	public int countOut() {
 		if (callCheck())
-			return -1;
+			return 0; //-1
 		return numbers[total--];
 	}
 }
