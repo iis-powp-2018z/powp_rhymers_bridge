@@ -1,5 +1,6 @@
 package edu.kis.vh.nursery;
 
+import edu.kis.vh.nursery.collections.IntArrayStack;
 import edu.kis.vh.nursery.collections.IntLinkedList;
 import edu.kis.vh.nursery.collections.StackImplementation;
 
@@ -20,6 +21,11 @@ public class DefaultCountingOutRhymer 	{
 	}
 	
 	
+	public DefaultCountingOutRhymer(IntArrayStack intArrayStack) {
+		// TODO Auto-generated constructor stub
+	}
+
+
 	public void countIn(int i) {
 		stackImplementation.push(i);
 	}
