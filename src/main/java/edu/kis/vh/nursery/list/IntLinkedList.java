@@ -1,6 +1,6 @@
 package edu.kis.vh.nursery.list;
 
-public class IntLinkedList {
+public class IntLinkedList extends StackImplementation {
 
 	private Node last;
 	private int size;
@@ -51,4 +51,5 @@ public class IntLinkedList {
     }
 
 
-}
+	}
+
