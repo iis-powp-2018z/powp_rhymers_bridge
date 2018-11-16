@@ -29,3 +29,4 @@ public class ArrayRyhmersFactory implements Rhymersfactory {
 	}
 
 }
+//implementacja bez poprawek 

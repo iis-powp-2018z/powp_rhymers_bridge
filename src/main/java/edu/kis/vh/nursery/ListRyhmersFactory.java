@@ -29,3 +29,4 @@ public class ListRyhmersFactory implements Rhymersfactory {
 	}
 
 }
+//implementacja bez poprawek 
