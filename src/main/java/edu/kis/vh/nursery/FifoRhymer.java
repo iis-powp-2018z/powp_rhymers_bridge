@@ -14,7 +14,7 @@ public class FifoRhymer extends DefaultCountingOutRhymer {
 	}
 
 	public FifoRhymer(IntLinkedList intLinkedList) {
-		super(intLinkedList);
+		super();
 		// TODO Auto-generated constructor stub
 	}
 
