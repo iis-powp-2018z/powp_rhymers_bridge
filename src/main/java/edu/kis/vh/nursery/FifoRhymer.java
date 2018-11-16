@@ -9,13 +9,12 @@ import stack.IntLinkedList;
 public class FifoRhymer extends DefaultCountingOutRhymer {
 
 	public FifoRhymer() {
-		super();
-		// TODO Auto-generated constructor stub
+		
 	}
 
-	public FifoRhymer(IntLinkedList intLinkedList) {
-		super();
-		// TODO Auto-generated constructor stub
+	public FifoRhymer(IntLinkedList list) {
+		super(list);
+		
 	}
 
 	public IntStack temp = new IntStack();
