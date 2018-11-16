@@ -5,23 +5,11 @@ public class DefaultCountingOutRhymer {
     private static final int CAPACITY = 12;
     private static final int FULL = 11;
     private static final int EMPTY = -1;
-    private final int[] numbers = new int[getCAPACITY()];
 
+    private final int[] numbers = new int[CAPACITY];
 
+    private int total = EMPTY;
 
-    private int total = getEMPTY();
-
-    public static int getCAPACITY() {
-        return CAPACITY;
-    }
-
-    public static int getFULL() {
-        return FULL;
-    }
-
-    public static int getEMPTY() {
-        return EMPTY;
-    }
 
     public int getTotal() {
         return total;
@@ -33,22 +21,22 @@ public class DefaultCountingOutRhymer {
     }
 
     protected boolean callCheck() {
-        return total == getEMPTY();
+        return total == EMPTY;
     }
 
     protected boolean isFull() {
-        return total == getFULL();
+        return total == FULL;
     }
 
     protected int peekaboo() {
         if (callCheck())
-            return getEMPTY();
+            return EMPTY;
         return numbers[total];
     }
 
     protected int countOut() {
         if (callCheck())
-            return getEMPTY();
+            return -1;
         return numbers[total--];
     }
 
