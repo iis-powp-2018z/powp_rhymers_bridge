@@ -4,33 +4,33 @@ import stack.IntLinkedList;
 
 public class DefaultCountingOutRhymer {
 	
-	protected IntLinkedList intLinkedList;
+	protected Stack list;
 
 	public DefaultCountingOutRhymer() {
-		this.intLinkedList = new IntLinkedList();
+		this.list = list;
 	}
-	public DefaultCountingOutRhymer(IntLinkedList intLinkedList) {
-		this.intLinkedList = intLinkedList;
+	public DefaultCountingOutRhymer(IntLinkedList list) {
+		this.list = list;
 	}
 
 	public void countIn(int in) {
-		intLinkedList.push(in);
+		list.push(in);
 	}
 
 	boolean isFull() {
-		return intLinkedList.isFull();
+		return list.isFull();
 	}
 
 	int peekaboo() {
-		return intLinkedList.top();
+		return list.top();
 	}
 
 	int countOut() {
-		return intLinkedList.pop();
+		return list.pop();
 	}
 
 	boolean callCheck() {
-		return intLinkedList.isEmpty();
+		return list.isEmpty();
 
 	}
 
