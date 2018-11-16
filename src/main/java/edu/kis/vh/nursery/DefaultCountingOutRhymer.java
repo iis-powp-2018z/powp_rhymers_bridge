@@ -2,42 +2,38 @@ package edu.kis.vh.nursery;
 
 public class DefaultCountingOutRhymer {
 
-    private static final int CAPACITY = 12;
-    private static final int FULL = 11;
-    private static final int EMPTY = -1;
+    private final IntArrayStack intArrayStack;
 
-    private final int[] numbers = new int[CAPACITY];
-
-    private int total = EMPTY;
-
-
-    public int getTotal() {
-        return total;
+    public DefaultCountingOutRhymer(IntArrayStack intArrayStack){
+        this.intArrayStack = intArrayStack;
     }
 
-    protected void countIn(int in) {
-        if (!isFull())
-            numbers[++total] = in;
+    public DefaultCountingOutRhymer(){
+        intArrayStack = new IntArrayStack();
+    }
+
+    public int getTotal(){
+        return intArrayStack.getTotal();
+    }
+
+    public void countIn(int in){
+        intArrayStack.countIn(in);
     }
 
     protected boolean callCheck() {
-        return total == EMPTY;
+        return intArrayStack.callCheck();
     }
 
-    protected boolean isFull() {
-        return total == FULL;
+    protected boolean isFull(){
+        return intArrayStack.isFull();
     }
 
     protected int peekaboo() {
-        if (callCheck())
-            return EMPTY;
-        return numbers[total];
+        return intArrayStack.peekaboo();
     }
 
     protected int countOut() {
-        if (callCheck())
-            return -1;
-        return numbers[total--];
+        return intArrayStack.countOut();
     }
 
 }

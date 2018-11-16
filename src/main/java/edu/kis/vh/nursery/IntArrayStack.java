@@ -10,7 +10,6 @@ public class IntArrayStack {
 
     private int total = EMPTY;
 
-
     public int getTotal() {
         return total;
     }
@@ -36,7 +35,7 @@ public class IntArrayStack {
 
     protected int countOut() {
         if (callCheck())
-            return -1;
+            return EMPTY;
         return numbers[total--];
     }
 
