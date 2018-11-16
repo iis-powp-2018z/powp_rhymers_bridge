@@ -1,6 +1,8 @@
 package stack;
 
-public class IntLinkedList implements IntLinked {
+import edu.kis.vh.nursery.Stack;
+
+public class IntLinkedList implements Stack{
 
 	private static final int EMPTY_STACK_ERROR = 0;
 	Node last;
