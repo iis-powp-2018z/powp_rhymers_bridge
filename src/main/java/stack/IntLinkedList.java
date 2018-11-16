@@ -1,48 +1,60 @@
 package stack;
-
-import edu.kis.vh.nursery.Stack;
-
-public class IntLinkedList implements Stack{
-
-	private static final int EMPTY_STACK_ERROR = 0;
-	Node last;
+ import edu.kis.vh.nursery.Stack;
+ public class IntLinkedList implements Stack {
+ 	public static final int EMPTY_LIST = -1;
+	private Node last;
 	int i;
-
-	public void push(int i) {
-		if (last == null)
+ 	public void push(int i) {
+		if (last == null) {
 			last = new Node(i);
-		else {
-			last.next = new Node(i);
-			last.next.prev = last;
-			last = last.next;
+		} else {
+			last.setNext(new Node(i));
+			last.getNext().setPrev(last);
+			last = last.getNext();
 		}
 	}
-
-	public boolean isEmpty() {
+ 	public boolean isEmpty() {
 		return last == null;
 	}
-
-	public boolean isFull() {
+ 	public boolean isFull() {
 		return false;
 	}
-
-	public int top() {
-		if (isEmpty())
-			return EMPTY_STACK_ERROR;
-		return last.value;
+ 	public int top() {
+		if (isEmpty()) {
+			return EMPTY_LIST;
+		}
+		return last.getValue();
 	}
-
-	public int pop() {
-		if (isEmpty())
-			return EMPTY_STACK_ERROR;
-		int ret = last.value;
-		last = last.prev;
+ 	public int pop() {
+		if (isEmpty()) {
+			return EMPTY_LIST;
+		}
+		int ret = last.getValue();
+		last = last.getPrev();
 		return ret;
 	}
-
-	public int getSize() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-}
+     private class Node {
+         
+        private int value;
+        private Node prev;
+        private Node next;
+         public Node(int i) {
+            value = i;
+        }
+         public int getValue() {
+            return value;
+        }
+         public Node getPrev() {
+            return prev;
+        }
+         public void setPrev(Node prev) {
+            this.prev = prev;
+        }
+         public Node getNext() {
+            return next;
+        }
+         public void setNext(Node next) {
+            this.next = next;
+        }
+    }
+ }

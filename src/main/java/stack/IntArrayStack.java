@@ -1,5 +1,6 @@
-package edu.kis.vh.nursery;
+package stack;
 
+import edu.kis.vh.nursery.Stack;
 
 public class IntArrayStack implements Stack{
     private static final int NUMBERS_CAPACITY = 12;
