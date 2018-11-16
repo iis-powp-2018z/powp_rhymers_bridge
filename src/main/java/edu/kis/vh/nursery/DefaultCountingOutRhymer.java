@@ -5,8 +5,9 @@ public class DefaultCountingOutRhymer {
     private static final int MAX_STACK = 12;
     private static final int INIT_EMPTY_STACK = -1;
     private int[] NUMBERS = new int[MAX_STACK];
-
     private int total = INIT_EMPTY_STACK;
+
+    //TODO needs refactoring to bridge pattern
 
     public void countIn(int in) {
         if (!isFull())
