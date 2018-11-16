@@ -37,7 +37,7 @@ public class IntLinkedList implements IntStackImplementation {
 	@Override
     public int pop() {
 		if (isEmpty())
-			return -1;
+			return EMPTY_STACK;
 		int ret = last.value;
 		last = last.prev;
 		i--;
