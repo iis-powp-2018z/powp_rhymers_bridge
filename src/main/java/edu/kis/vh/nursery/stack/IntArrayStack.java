@@ -2,9 +2,7 @@ package edu.kis.vh.nursery.stack;
 
 public class IntArrayStack implements Stacker {
 
-    private static final int MAX_STACK = 12;
-    private static final int INIT_EMPTY_STACK = -1;
-    private int[] NUMBERS = new int[MAX_STACK];
+    private int[] NUMBERS = new int[MAX_STACK_SIZE];
     private int total = INIT_EMPTY_STACK;
 
     @Override
@@ -20,20 +18,20 @@ public class IntArrayStack implements Stacker {
 
     @Override
     public boolean isFull() {
-        return total == (MAX_STACK -1);
+        return total == (MAX_STACK_SIZE -1);
     }
 
     @Override
     public int top() {
         if (isEmpty())
-            return -1;
+            return INIT_EMPTY_STACK;
         return NUMBERS[total];
     }
 
     @Override
     public int pop() {
         if (isEmpty())
-            return -1;
+            return INIT_EMPTY_STACK;
         return NUMBERS[total--];
     }
 

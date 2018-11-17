@@ -1,19 +1,14 @@
 package edu.kis.vh.nursery.stack;
 
-import edu.kis.vh.nursery.stack.Node;
-import edu.kis.vh.nursery.stack.Stacker;
-
 /**
  * Implementacja listy dla elementów typu int
  */
 public class IntLinkedList implements Stacker {
-
-    private static final int MAX_STACK_SIZE = 12;
     /**
      * Ostatni element listy
      */
     private Node last;
-    private int i = -1;
+    private int i = INIT_EMPTY_STACK;
 
     /**
      * Metoda dodaje kolejny element typu int na koniec listy
@@ -58,7 +53,7 @@ public class IntLinkedList implements Stacker {
     @Override
     public int top() {
         if (isEmpty())
-            return -1;
+            return INIT_EMPTY_STACK;
         return last.getValue();
     }
 
@@ -69,7 +64,7 @@ public class IntLinkedList implements Stacker {
     @Override
     public int pop() {
         if (isEmpty())
-            return -1;
+            return INIT_EMPTY_STACK;
         int ret = last.getValue();
         last = last.getPrev();
         this.i--;
