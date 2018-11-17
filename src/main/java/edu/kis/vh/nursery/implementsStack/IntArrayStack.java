@@ -4,15 +4,15 @@ import edu.kis.vh.nursery.Stack;
 
 public class IntArrayStack implements Stack {
 
-	private static final int fullStack = 11;
+	private static final int FULL_STACK = 11;
 
-	private static final int EmptyStack = -1;
+	private static final int EMPTY_STACK = -1;
 
-	private static final int stackCapacity = 12;
+	private static final int STACK_CAPACITY = 12;
 
-	private int[] numbers = new int[stackCapacity];
+	private int[] numbers = new int[STACK_CAPACITY];
 
-	private int total = EmptyStack;
+	private int total = EMPTY_STACK;
 
 	public int getTotal() {
 		return total;
@@ -26,22 +26,22 @@ public class IntArrayStack implements Stack {
 	}
 
 	public boolean isEmpty() {
-		return total == EmptyStack;
+		return total == EMPTY_STACK;
 	}
 
 	public boolean isFull() {
-		return total == fullStack;
+		return total == FULL_STACK;
 	}
 
 	public int top() {
 		if (isEmpty())
-			return EmptyStack;
+			return EMPTY_STACK;
 		return numbers[total];
 	}
 
 	public int pop() {
 		if (isEmpty())
-			return EmptyStack;
+			return EMPTY_STACK;
 		return numbers[total--];
 	}
 
