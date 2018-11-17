@@ -1,6 +1,8 @@
 package edu.kis.vh.nursery;
 
+import edu.kis.vh.nursery.factory.ArrayRhymersFactory;
 import edu.kis.vh.nursery.factory.DefaultRhymersFactory;
+import edu.kis.vh.nursery.factory.ListRhymersFactory;
 import edu.kis.vh.nursery.factory.RhymersFactory;
 
 import java.util.Arrays;
@@ -11,14 +13,33 @@ class RhymersDemo {
 	public static void main(String[] args) {
 		RhymersFactory factory = new DefaultRhymersFactory();
 		
-		DefaultCountingOutRhymer[] rhymers = { factory.getStandardRhymer(), factory.getFalseRhymer(),
-				factory.getFIFORhymer(), factory.getHanoiRhymer()};
-
+		DefaultCountingOutRhymer[] rhymers = {
+				factory.getStandardRhymer(),
+				factory.getFalseRhymer(),
+				factory.getFIFORhymer(),
+				factory.getHanoiRhymer()};
 		testRhymers(rhymers);
 
 		System.out.println("total rejected is "
 				+ ((HanoiRhymer) rhymers[3]).reportRejected());
-		
+
+		RhymersFactory arrayFactory = new ArrayRhymersFactory();
+		DefaultCountingOutRhymer[] rRhymers = {
+				arrayFactory.getStandardRhymer(),
+				arrayFactory.getFalseRhymer(),
+				arrayFactory.getFIFORhymer(),
+				arrayFactory.getHanoiRhymer()
+		};
+		testRhymers(rRhymers);
+
+		RhymersFactory listFactory = new ListRhymersFactory();
+		DefaultCountingOutRhymer[] lRhymers = {
+				listFactory.getStandardRhymer(),
+				listFactory.getFalseRhymer(),
+				listFactory.getFIFORhymer(),
+				listFactory.getHanoiRhymer()
+		};
+		testRhymers(lRhymers);
 	}
 
 	private static void testRhymers(DefaultCountingOutRhymer[] rhymers) {
