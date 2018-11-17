@@ -9,9 +9,9 @@ public class RhymersJUnitTest {
 	public void testCountIn() {
 		IntArrayStack rhymer = new IntArrayStack();
 		int testValue = 4;
-		rhymer.countIn(testValue);
+		rhymer.push(testValue);
 
-		int result = rhymer.peekaboo();
+		int result = rhymer.top();
 		Assert.assertEquals(testValue, result);
 	}
 

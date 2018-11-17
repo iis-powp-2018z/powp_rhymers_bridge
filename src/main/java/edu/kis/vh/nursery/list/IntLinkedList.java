@@ -1,6 +1,8 @@
 package edu.kis.vh.nursery.list;
 
-public class IntLinkedList {
+import edu.kis.vh.nursery.Stack;
+
+public class IntLinkedList implements Stack {
 
 	private Node last;
 	private int i;
