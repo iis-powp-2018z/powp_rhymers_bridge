@@ -4,6 +4,16 @@ public class FifoRhymer extends DefaultCountingOutRhymer {
 
 	private DefaultCountingOutRhymer temp = new DefaultCountingOutRhymer();
 
+	public FifoRhymer() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public FifoRhymer(Stack stack) {
+		super(stack);
+		// TODO Auto-generated constructor stub
+	}
+
 	@Override
 	public int countOut() {
 		while (!callCheck())
