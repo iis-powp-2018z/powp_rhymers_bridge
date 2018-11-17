@@ -1,30 +1,32 @@
 package edu.kis.vh.nursery;
 
+import edu.kis.vh.nursery.implementsStack.IntLinkedList;
+
 public class FifoRhymer extends DefaultCountingOutRhymer {
 
-	private DefaultCountingOutRhymer temp = new DefaultCountingOutRhymer();
+	// wg mnie najlepszy będzie IntLinkedList
+	private Stack temp;
 
 	public FifoRhymer() {
 		super();
-		// TODO Auto-generated constructor stub
+		this.temp = new IntLinkedList();
 	}
 
 	public FifoRhymer(Stack stack) {
 		super(stack);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public int countOut() {
 		while (!callCheck())
 
-			temp.countIn(super.countOut());
+			temp.push(super.countOut());
 
-		final int ret = temp.countOut();
+		final int ret = temp.pop();
 
-		while (!temp.callCheck())
+		while (!temp.isEmpty())
 
-			countIn(temp.countOut());
+			countIn(temp.pop());
 
 		return ret;
 	}
