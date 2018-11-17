@@ -6,7 +6,7 @@ public class IntArrayStack implements Stack {
 
 	private static final int FULL_STACK = 11;
 
-	private static final int EMPTY_STACK = -1;
+	private static final int EMPTY_STACK = 0;
 
 	private static final int STACK_CAPACITY = 12;
 

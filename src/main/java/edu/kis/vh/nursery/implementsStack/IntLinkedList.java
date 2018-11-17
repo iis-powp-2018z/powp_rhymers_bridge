@@ -4,7 +4,7 @@ import edu.kis.vh.nursery.Stack;
 
 public class IntLinkedList implements Stack {
 
-	private static final int EMPTY_STACK = -1;
+	private static final int EMPTY_STACK = 0;
 
 	private Node last;
 	private int i;
