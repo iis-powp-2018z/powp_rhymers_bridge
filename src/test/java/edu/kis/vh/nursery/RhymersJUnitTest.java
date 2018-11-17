@@ -1,14 +1,14 @@
 package edu.kis.vh.nursery;
 
-import edu.kis.vh.nursery.stack.Stacker;
+import edu.kis.vh.nursery.factory.DefaultRhymersFactory;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class RhymersJUnitTest {
+public class RhymersJUnitTest extends RhymersTest {
 
-	private static final int EMPTY_STACK_VALUE = Stacker.INIT_EMPTY_STACK;
-	private static final int TEST_VALUE = 4;
-	private static final int STACK_CAPACITY = 11;
+	public RhymersJUnitTest() {
+		super(new DefaultRhymersFactory());
+	}
 
 	@Test
 	public void testCountIn() {
