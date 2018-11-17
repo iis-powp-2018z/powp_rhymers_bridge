@@ -5,31 +5,35 @@ package edu.kis.vh.nursery.list;
  */
 public class IntLinkedList {
 
+    private static final int MAX_STACK_SIZE = 12;
     /**
      * Ostatni element listy
      */
     private Node last;
-    private int i;
+    private int i = -1;
 
     /**
      * Metoda dodaje kolejny element typu int na koniec listy
      * @param i liczba całkowita która ma być dodana do listy
      */
     public void push(int i) {
-        if (last == null)
-            last = new Node(i);
-        else {
-            last.setNext(new Node(i));
-            last.getNext().setPrev(last);
-            last = last.getNext();
+        if(!isFull()) {
+            if (last == null)
+                last = new Node(i);
+            else {
+                last.setNext(new Node(i));
+                last.getNext().setPrev(last);
+                last = last.getNext();
+            }
         }
+        this.i++;
     }
 
     /**
      * metda sprawdza czyy lista jest pusta
      * @return true jeśli lista jest pusta, false jeśli nie jest pusta
      */
-    private boolean isEmpty() {
+    public boolean isEmpty() {
         return last == null;
     }
 
@@ -38,7 +42,7 @@ public class IntLinkedList {
      * @return false
      */
     public boolean isFull() {
-        return false;
+        return this.i == (MAX_STACK_SIZE - 1);
     }
 
     /**
@@ -60,6 +64,7 @@ public class IntLinkedList {
             return -1;
         int ret = last.getValue();
         last = last.getPrev();
+        this.i--;
         return ret;
     }
 
