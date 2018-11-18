@@ -26,7 +26,7 @@ public class IntArrayStack {
         return total == LAST_INDEX;
     }
 
-    protected int peeKaBoo() {
+    public int peeKaBoo() {
         if (callCheck())
             return EMPTY_STACK_;
         return numbers[total];
