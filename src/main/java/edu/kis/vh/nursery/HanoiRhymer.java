@@ -7,6 +7,9 @@ public class HanoiRhymer extends DefaultCountingOutRhymer {
     private static final int STARTING_VALUE = 0;
     int totalRejected = STARTING_VALUE;
 
+    public HanoiRhymer() {
+    }
+
     public HanoiRhymer(Stack stack) {
         super(stack);
     }
