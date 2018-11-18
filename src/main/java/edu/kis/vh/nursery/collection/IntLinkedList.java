@@ -1,6 +1,8 @@
 package edu.kis.vh.nursery.collection;
 
-public class IntLinkedList {
+import edu.kis.vh.nursery.IntStack;
+
+public class IntLinkedList implements IntStack{
 
 	private static final int VALIDVALUE = 0;
 	private Node last;
@@ -44,6 +46,14 @@ public class IntLinkedList {
 		last = last.getPrev();
 		return ret;
 	}
+
+	 @Override
+	    public int peek() {
+	        if (isEmpty()) {
+	            return VALIDVALUE;
+	        }
+	        return last.getValue();
+	    }
 
 }
  class Node {
