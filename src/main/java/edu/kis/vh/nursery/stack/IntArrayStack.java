@@ -6,10 +6,6 @@ public class IntArrayStack implements Stack {
     private static final int STACK_CAPACITY = 12;
     private int[] numbers = new int[STACK_CAPACITY];
 
-    public int getTotal() {
-        return total;
-    }
-
     private int total = EMPTY_STACK;
 
     @Override
