@@ -25,13 +25,13 @@ public class IntLinkedList implements Stack{
 
     public int peeKaBoo() {
         if (callCheck())
-            return -1;
+            return EMPTY_STACK;
         return last.getValue();
     }
 
     public int countOut() {
         if (callCheck())
-            return -1;
+            return EMPTY_STACK;
         int ret = last.getValue();
         last = last.getPrev();
         return ret;

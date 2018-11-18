@@ -2,7 +2,6 @@ package edu.kis.vh.nursery.stack;
 
 public class IntArrayStack implements Stack {
 
-    private static final int EMPTY_STACK_ = -1;
     private static final int LAST_INDEX = 11;
     private static final int STACK_CAPACITY = 12;
     private int[] numbers = new int[STACK_CAPACITY];
@@ -11,7 +10,7 @@ public class IntArrayStack implements Stack {
         return total;
     }
 
-    private int total = EMPTY_STACK_;
+    private int total = EMPTY_STACK;
 
     @Override
     public void countIn(int in) {
@@ -21,7 +20,7 @@ public class IntArrayStack implements Stack {
 
     @Override
     public boolean callCheck() {
-        return total == EMPTY_STACK_;
+        return total == EMPTY_STACK;
     }
 
     @Override
@@ -32,14 +31,14 @@ public class IntArrayStack implements Stack {
     @Override
     public int peeKaBoo() {
         if (callCheck())
-            return EMPTY_STACK_;
+            return EMPTY_STACK;
         return numbers[total];
     }
 
     @Override
     public int countOut() {
         if (callCheck())
-            return EMPTY_STACK_;
+            return EMPTY_STACK;
         return numbers[total--];
     }
 
