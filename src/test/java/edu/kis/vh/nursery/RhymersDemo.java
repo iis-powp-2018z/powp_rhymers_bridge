@@ -3,13 +3,19 @@ package edu.kis.vh.nursery;
 import edu.kis.vh.nursery.HanoiRhymer;
 import edu.kis.vh.nursery.factory.DefaultRhymersFactory;
 import edu.kis.vh.nursery.factory.RhymersFactory;
+import edu.kis.vh.nursery.stacklist.IntArrayStack;
+import edu.kis.vh.nursery.stacklist.IntLinkedList;
 
 class RhymersDemo {
 	
 	public static void main(String[] args) {
 		RhymersFactory factory = new DefaultRhymersFactory();
+		RhymersFactory factory2 = new IntLinkedList();
+		RhymersFactory factory3 = new IntArrayStack();
 		
 		testRhymers(factory);
+		testRhymers(factory2);
+		testRhymers(factory3);
 		
 	}
 
