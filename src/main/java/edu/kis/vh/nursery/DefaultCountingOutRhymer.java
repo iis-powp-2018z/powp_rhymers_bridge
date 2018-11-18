@@ -18,7 +18,6 @@ public class DefaultCountingOutRhymer {
 		this(new IntArrayStack());
 	}
 	public void countIn(int in) {
-		
 		stack.push(in);
 		
 		//stack.countIn(in);
