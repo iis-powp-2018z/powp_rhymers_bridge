@@ -1,55 +1,41 @@
 package edu.kis.vh.nursery;
 
-import edu.kis.vh.nursery.collections.IntArrayStack;
-import edu.kis.vh.nursery.collections.IntLinkedList;
-import edu.kis.vh.nursery.collections.StackImplementation;
+public class DefaultCountingOutRhymer {
+ 
+	private static final int FULL_STACK = 11;
 
-public class DefaultCountingOutRhymer 	{
+	private static final int TOTAL_START = -1;
 
-
-	StackImplementation stackImplementation;
-
-
-
-	public DefaultCountingOutRhymer(StackImplementation intLinkedlist) {
-		this.stackImplementation = intLinkedlist;
-	}
+	private static final int NUMBERS_MAX = 12;
 	
-	
-	public DefaultCountingOutRhymer() {
-		stackImplementation = new IntLinkedList();
-	}
-	
-	
-	public DefaultCountingOutRhymer(IntArrayStack intArrayStack) {
-		// TODO Auto-generated constructor stub
-	}
 
+	private int[] numbers = new int[NUMBERS_MAX];
 
-	public void countIn(int i) {
-		stackImplementation.push(i);
+	private int total = TOTAL_START;
+
+	public void countIn(int in) {
+		if (!isFull())
+			numbers[++total] = in;
 	}
 
-	protected boolean callCheck() {		
-		return stackImplementation.isEmpty();
+	protected boolean callCheck() {
+		return total == TOTAL_START;
 	}
 
-	boolean isFull() {		
-		return stackImplementation.isFull();
+	public boolean isFull() {
+		return total == FULL_STACK;
 	}
 
-	protected int peekaboo() {	
-		return stackImplementation.top();
+	protected int peekaboo() {
+		if (callCheck())
+			return TOTAL_START;
+		return numbers[total];
 	}
 
 	public int countOut() {
-		return stackImplementation.pop();
+		if (callCheck())
+			return -1;
+		return numbers[total--];
 	}
-	
-	public int getTotal() {
-		return stackImplementation.getTotal();
-		
-	}
-	
-	
+
 }
