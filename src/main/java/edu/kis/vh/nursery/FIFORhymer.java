@@ -4,6 +4,9 @@ public class FIFORhymer extends DefaultCountingOutRhymer {
 
     private DefaultCountingOutRhymer temp = new DefaultCountingOutRhymer();
 
+    /**
+     * @return at the end, it return int
+     */
     @Override
     public int countOut() {
         while (!callCheck())
