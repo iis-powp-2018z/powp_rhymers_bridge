@@ -29,7 +29,7 @@ public class IntArrayStack {
 
     public int peekaboo() {
         if (callCheck())
-            return EMPTY;
+            return 0;
         return numbers[total];
     }
 
