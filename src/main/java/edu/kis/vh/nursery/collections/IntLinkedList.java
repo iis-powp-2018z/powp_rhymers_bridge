@@ -30,7 +30,7 @@ public class IntLinkedList implements IntStackImplementation {
 	@Override
     public int top() {
 		if (isEmpty())
-			return -1;
+			return EMPTY_STACK;
 		return last.value;
 	}
 
