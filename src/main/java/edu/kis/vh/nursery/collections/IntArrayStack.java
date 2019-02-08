@@ -1,6 +1,6 @@
 package edu.kis.vh.nursery.collections;
 
-public class IntArrayStack {
+public class IntArrayStack implements IntStackImplementation{
 
     private static final int STACK_CAPACITY = 12;
     private static final int FULL = 11;
@@ -23,8 +23,33 @@ public class IntArrayStack {
         return total == EMPTY;
     }
 
+    @Override
+    public void push(int i) {
+        
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return false;
+    }
+
     public boolean isFull() {
         return total == FULL;
+    }
+
+    @Override
+    public int top() {
+        return 0;
+    }
+
+    @Override
+    public int pop() {
+        return 0;
+    }
+
+    @Override
+    public int getSize() {
+        return 0;
     }
 
     public int peekaboo() {
