@@ -25,7 +25,8 @@ public class IntArrayStack implements IntStackImplementation{
 
     @Override
     public void push(int i) {
-
+        if (!isFull())
+            numbers[++total] = i;
     }
 
     @Override
@@ -39,17 +40,22 @@ public class IntArrayStack implements IntStackImplementation{
 
     @Override
     public int top() {
-        return 0;
+        if (isEmpty()) {
+            return EMPTY;
+        }
+        return numbers[total];
     }
 
     @Override
     public int pop() {
-        return 0;
+        if (isEmpty())
+            return EMPTY;
+        return numbers[total--];
     }
 
     @Override
     public int getSize() {
-        return 0;
+        return total;
     }
 
     public int peekaboo() {
