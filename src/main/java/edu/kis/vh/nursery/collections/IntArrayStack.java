@@ -25,7 +25,7 @@ public class IntArrayStack implements IntStackImplementation{
 
     @Override
     public void push(int i) {
-        
+
     }
 
     @Override
