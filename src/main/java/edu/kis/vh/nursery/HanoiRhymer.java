@@ -1,11 +1,21 @@
 package edu.kis.vh.nursery;
 
+import edu.kis.vh.nursery.collections.Stack;
+
 public class HanoiRhymer extends DefaultCountingOutRhymer {
     /**
      *
      */
     private static final int INT = 0;
     private int totalRejected = INT;
+
+    public HanoiRhymer(Stack stack) {
+        super(stack);
+    }
+
+    public HanoiRhymer(){
+        super();
+    }
 
     /**
      *
