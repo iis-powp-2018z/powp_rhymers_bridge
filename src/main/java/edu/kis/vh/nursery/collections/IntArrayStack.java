@@ -1,9 +1,8 @@
 package edu.kis.vh.nursery.collections;
 
-public class IntArrayStack {
+public class IntArrayStack implements Stack{
 
     private static final int STACK_CAPACITY = 12;
-    private static final int INITIAL_VALUE = -1;
     private static final int FULL_STACK = 11;
 
     private int[] rhymerArray = new int[STACK_CAPACITY];
@@ -12,24 +11,29 @@ public class IntArrayStack {
     public int getTotal() {
         return total;
     }
-    void countIn(int in) {
+
+    public void push(int in) {
         if (!isFull())
             rhymerArray[++total] = in;
     }
-    boolean callCheck() {
+
+    public boolean isEmpty() {
         return total == INITIAL_VALUE;
     }
-    boolean isFull() {
+
+    public boolean isFull() {
         return total == FULL_STACK;
     }
-    int peekaboo() {
-        if (callCheck()) {
+
+    public int top() {
+        if (isEmpty()) {
             return INITIAL_VALUE;
         }
         return rhymerArray[total];
     }
-    int countOut() {
-        if (callCheck())
+
+    public int pop() {
+        if (isEmpty())
             return -1;
         return rhymerArray[total--];
     }
