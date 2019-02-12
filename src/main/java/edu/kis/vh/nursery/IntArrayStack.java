@@ -2,12 +2,12 @@ package edu.kis.vh.nursery;
 
 public class IntArrayStack {
 
-    private static final int stackCapacity = 12;
-    private static final int initialValue = -1;
-    private static final int fullStack = 11;
+    private static final int STACK_CAPACITY = 12;
+    private static final int INITIAL_VALUE = -1;
+    private static final int FULL_STACK = 11;
 
-    private int[] rhymerArray = new int[stackCapacity];
-    private int total = initialValue;
+    private int[] rhymerArray = new int[STACK_CAPACITY];
+    private int total = INITIAL_VALUE;
 
     public int getTotal() {
         return total;
@@ -17,14 +17,14 @@ public class IntArrayStack {
             rhymerArray[++total] = in;
     }
     boolean callCheck() {
-        return total == initialValue;
+        return total == INITIAL_VALUE;
     }
     boolean isFull() {
-        return total == fullStack;
+        return total == FULL_STACK;
     }
     int peekaboo() {
         if (callCheck()) {
-            return initialValue;
+            return INITIAL_VALUE;
         }
         return rhymerArray[total];
     }
