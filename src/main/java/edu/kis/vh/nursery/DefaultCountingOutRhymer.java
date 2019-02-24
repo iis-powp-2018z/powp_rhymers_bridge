@@ -5,41 +5,41 @@ import edu.kis.vh.nursery.collection.Stack;
 
 public class DefaultCountingOutRhymer {
 	
-	private Stack intLinkedList;
+	private Stack stack;
 	
 	public DefaultCountingOutRhymer() {
 		super();
-		intLinkedList = new IntLinkedList();
+		stack = new IntLinkedList();
 	}
 
 
-	public DefaultCountingOutRhymer(IntLinkedList intArrayStack) {
+	public DefaultCountingOutRhymer(Stack stack) {
 		super();
-		this.intLinkedList = intArrayStack;
+		this.stack = stack;
 	}
 
 	public int getTotal() {
-		return intLinkedList.getTotal();
+		return stack.getTotal();
 	}
 
 	public void countIn(int in) {
-		intLinkedList.push(in);
+		stack.push(in);
 	}
 
 	public boolean callCheck() {
-		return intLinkedList.isEmpty();
+		return stack.isEmpty();
 	}
 
 	public boolean isFull() {
-		return intLinkedList.isFull();
+		return stack.isFull();
 	}
 
 	public int countOut() {
-		return intLinkedList.pop();
+		return stack.pop();
 	}
 	
 	public int peekaboo() {
-		return intLinkedList.top();
+		return stack.top();
 	}
 
 }

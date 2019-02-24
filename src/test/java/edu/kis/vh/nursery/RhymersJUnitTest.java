@@ -34,7 +34,7 @@ public class RhymersJUnitTest {
 	public void testIsFull() {
 		Stack rhymer = new IntArrayStack();
 		final int STACK_CAPACITY = 12;
-		for (int i = 0; i < STACK_CAPACITY; i++) {
+		for (int i = 1; i < STACK_CAPACITY; i++) {
 			boolean result = rhymer.isFull();
 			Assert.assertEquals(false, result);
 			rhymer.push(888);
@@ -47,7 +47,7 @@ public class RhymersJUnitTest {
 	@Test
 	public void testPeekaboo() {
 		Stack rhymer = new IntArrayStack();
-		final int EMPTY_STACK_VALUE = -1;
+		final int EMPTY_STACK_VALUE = 0;
 
 		int result = rhymer.top();
 		Assert.assertEquals(EMPTY_STACK_VALUE, result);
@@ -64,7 +64,7 @@ public class RhymersJUnitTest {
 	@Test
 	public void testCountOut() {
 		Stack rhymer = new IntArrayStack();
-		final int EMPTY_STACK_VALUE = -1;
+		final int EMPTY_STACK_VALUE = 0;
 
 		int result = rhymer.pop();
 		Assert.assertEquals(EMPTY_STACK_VALUE, result);
