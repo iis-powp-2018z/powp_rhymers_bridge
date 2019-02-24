@@ -14,29 +14,34 @@ public class IntLinkedList implements Stack {
 			last = last.getNext();
 		}
 	}
-
+	
+	@Override
 	public boolean isEmpty() {
 		return last == null;
 	}
-
+	
+	@Override
 	public boolean isFull() {
 		return false;
 	}
 
+	@Override
 	public int top() {
 		if (isEmpty())
-			return -1;
+			return INITIAL_VALUE;
 		return last.getValue();
 	}
 
+	@Override
 	public int pop() {
 		if (isEmpty())
-			return -1;
+			return INITIAL_VALUE;
 		int ret = last.getValue();
 		last = last.getPrev();
 		return ret;
 	}
 
+	@Override
 	public int getTotal() {
 		// TODO Auto-generated method stub
 		return size;
