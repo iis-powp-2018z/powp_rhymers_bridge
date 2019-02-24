@@ -11,7 +11,7 @@ public class RhymersJUnitTest {
 	@Test
 	public void testCountIn() {
 		Stack rhymer = new IntArrayStack();
-		int testValue = 4;
+		int testValue = 5;
 		rhymer.push(testValue);
 
 		int result = rhymer.top();
