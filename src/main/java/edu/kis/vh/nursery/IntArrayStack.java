@@ -1,6 +1,6 @@
 package edu.kis.vh.nursery;
 
-public class IntArrayStack {
+public class IntArrayStack implements Stack {
 
 
 		private static final int CHECK_FULL = 11;
@@ -13,31 +13,55 @@ public class IntArrayStack {
 
 		private int total = CHECK_ERROR;
 
+		/* (non-Javadoc)
+		 * @see edu.kis.vh.nursery.Stack#getTotal()
+		 */
+		@Override
 		public int getTotal() {
 			return total;
 		}
 
-		public void countIn(int in) {
+		/* (non-Javadoc)
+		 * @see edu.kis.vh.nursery.Stack#push(int)
+		 */
+		@Override
+		public void push(int in) {
 			if (!isFull())
 				NUMBERS[++total] = in;
 		}
 
-		public boolean callCheck() {
+		/* (non-Javadoc)
+		 * @see edu.kis.vh.nursery.Stack#isEmpty()
+		 */
+		@Override
+		public boolean isEmpty() {
 			return total == CHECK_ERROR;
 		}
 
+		/* (non-Javadoc)
+		 * @see edu.kis.vh.nursery.Stack#isFull()
+		 */
+		@Override
 		public boolean isFull() {
 			return total == CHECK_FULL;
 		}
 
-		public int peekaboo() {
-			if (callCheck())
+		/* (non-Javadoc)
+		 * @see edu.kis.vh.nursery.Stack#top()
+		 */
+		@Override
+		public int top() {
+			if (isEmpty())
 				return CHECK_ERROR;
 			return NUMBERS[total];
 		}
 
-		public int countOut() {
-			if (callCheck())
+		/* (non-Javadoc)
+		 * @see edu.kis.vh.nursery.Stack#pop()
+		 */
+		@Override
+		public int pop() {
+			if (isEmpty())
 				return CHECK_ERROR;
 			return NUMBERS[total--];
 		}
