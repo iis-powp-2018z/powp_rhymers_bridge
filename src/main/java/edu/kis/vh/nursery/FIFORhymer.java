@@ -1,6 +1,7 @@
 package edu.kis.vh.nursery;
 
 import edu.kis.vh.nursery.collection.IntArrayStack;
+import edu.kis.vh.nursery.collection.IntLinkedList;
 import edu.kis.vh.nursery.collection.Stack;
 
 public class FIFORhymer extends DefaultCountingOutRhymer {
@@ -25,7 +26,7 @@ public class FIFORhymer extends DefaultCountingOutRhymer {
 
 		int ret = temp.pop();
 
-		while (!temp.isFull())
+		while (!temp.isEmpty())
 
 			countIn(temp.pop());
 
