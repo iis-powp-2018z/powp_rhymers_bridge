@@ -3,8 +3,8 @@ package edu.kis.vh.nursery;
 import org.junit.Assert;
 import org.junit.Test;
 
-import edu.kis.vh.nursery.list.IntArrayStack;
-import edu.kis.vh.nursery.list.Stack;
+import edu.kis.vh.nursery.collection.IntArrayStack;
+import edu.kis.vh.nursery.collection.Stack;
 
 public class RhymersJUnitTest {
 
